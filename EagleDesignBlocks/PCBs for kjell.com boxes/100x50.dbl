@@ -6,7 +6,7 @@
 &lt;br&gt;
 Fits box G080, G081N, G082, G083N
 &lt;br&gt;
-mount holes 50x50mm</description>
+mount holes 100x50mm</description>
 <attributes>
 <attribute name="BOARDSIZE" value="106.2 x 56.2 mm"/>
 <attribute name="LAYERS" value="0:"/>
