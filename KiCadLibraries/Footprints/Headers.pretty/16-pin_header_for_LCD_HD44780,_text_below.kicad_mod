@@ -1,8 +1,8 @@
-(module 16-pin_header_for_LCD_HD44780,_text_below (layer F.Cu) (tedit 5E3D89C4)
+(module 16-pin_header_for_LCD_HD44780,_text_below (layer F.Cu) (tedit 5E3EDC6E)
   (fp_text reference REF** (at 0 -2.04) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value 16-pin_header_for_LCD_HD44780,_text_below (at 17.78 -2.54) (layer F.Fab) hide
+  (fp_text value 16-pin_header_for_LCD_HD44780,_text_below (at 20.32 -2.54) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text user VSS (at 0 1.27 90) (layer F.SilkS)
