@@ -1,6 +1,70 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 4-pin_3LED_header
+#
+DEF 4-pin_3LED_header J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "4-pin_3LED_header" 0 -300 50 H I C CNN
+F2 "My_Headers:4-pin_3_LED_header" 200 -400 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+T 0 100 -200 50 0 0 0 GND Normal 0 C C
+T 0 100 100 50 0 0 0 LED1 Normal 0 C C
+T 0 100 0 50 0 0 0 LED2 Normal 0 C C
+T 0 100 -100 50 0 0 0 LED3 Normal 0 C C
+P 2 1 1 6 -50 -200 -20 -200 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X LED1 1 -200 100 150 R 50 50 1 1 P
+X LED2 2 -200 0 150 R 50 50 1 1 P
+X LED3 3 -200 -100 150 R 50 50 1 1 P
+X GND 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 5-pin_3-pole_3,5mm_audio_header
+#
+DEF 5-pin_3-pole_3,5mm_audio_header J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "5-pin_3-pole_3,5mm_audio_header" 250 -300 50 H I C CNN
+F2 "My_Headers:5-pin_3,5mm_audio_jack_header" 400 -400 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -200 20 901 -901 1 1 6 N 0 -180 0 -220
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+A 0 200 20 901 -901 1 1 6 N 0 220 0 180
+T 0 100 -200 50 0 0 0 GND Normal 0 C C
+T 0 50 200 50 0 0 0 S Normal 0 C C
+T 0 50 100 50 0 0 0 SN Normal 0 C C
+T 0 50 0 50 0 0 0 T Normal 0 C C
+T 0 50 -100 50 0 0 0 TN Normal 0 C C
+P 2 1 1 6 -50 -200 -20 -200 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+P 2 1 1 6 -50 200 -20 200 N
+X S 1 -200 200 150 R 50 50 1 1 P
+X SN 2 -200 100 150 R 50 50 1 1 P
+X T 3 -200 0 150 R 50 50 1 1 P
+X TN 4 -200 -100 150 R 50 50 1 1 P
+X GND 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # 8-pin_female_header_LCD_interface
 #
 DEF 8-pin_female_header_LCD_interface J 0 40 Y Y 1 F N
