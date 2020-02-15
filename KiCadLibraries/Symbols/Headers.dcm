@@ -1,5 +1,23 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 16-pin_LCD_header
+D Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 2-pin_power_input_header
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 3-pin_LCD_header
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 4-pin_3LED_header
 D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector

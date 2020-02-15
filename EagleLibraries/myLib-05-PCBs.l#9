@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.5.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="FB03-50X52">
+<description>PCB for electrokit.se art#12109003
+&lt;br&gt;
+Fits box FB03
+&lt;br&gt;
+mount holes 50x52mm</description>
+<wire x1="0" y1="0" x2="56" y2="0" width="0.127" layer="20"/>
+<wire x1="56" y1="0" x2="56" y2="58" width="0.127" layer="20"/>
+<wire x1="56" y1="58" x2="0" y2="58" width="0.127" layer="20"/>
+<wire x1="0" y1="58" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="53" y="3" drill="3.2"/>
+<hole x="53" y="55" drill="3.2"/>
+<hole x="3" y="55" drill="3.2"/>
+</package>
+<package name="FB01-X43">
+<description>PCB for electrokit.se art#12109001
+&lt;br&gt;
+Fits box FB01
+&lt;br&gt;
+mount holes x43mm</description>
+</package>
+<package name="FB02-36X">
+<description>PCB for electrokit.se art#12109002
+&lt;br&gt;
+Fits box FB02
+&lt;br&gt;
+mount holes 36xmm</description>
+</package>
+<package name="FB04-85X47">
+<description>PCB for electrokit.se art#12109004
+&lt;br&gt;
+Fits box FB04
+&lt;br&gt;
+mount holes 85x47mm</description>
+<wire x1="0" y1="0" x2="91" y2="0" width="0.127" layer="20"/>
+<wire x1="91" y1="0" x2="91" y2="53" width="0.127" layer="20"/>
+<wire x1="91" y1="53" x2="0" y2="53" width="0.127" layer="20"/>
+<wire x1="0" y1="53" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="88" y="3" drill="3.2"/>
+<hole x="88" y="50" drill="3.2"/>
+<hole x="3" y="50" drill="3.2"/>
+</package>
+<package name="FB05-47X84">
+<description>PCB for electrokit.se art#12109005
+&lt;br&gt;
+Fits box FB05
+&lt;br&gt;
+mount holes 47x84mm</description>
+<wire x1="0" y1="0" x2="53" y2="0" width="0.127" layer="20"/>
+<wire x1="53" y1="0" x2="53" y2="90" width="0.127" layer="20"/>
+<wire x1="53" y1="90" x2="0" y2="90" width="0.127" layer="20"/>
+<wire x1="0" y1="90" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="50" y="3" drill="3.2"/>
+<hole x="50" y="87" drill="3.2"/>
+<hole x="3" y="87" drill="3.2"/>
+</package>
+<package name="FB05-58X84">
+<description>PCB for electrokit.se art#12109005
+&lt;br&gt;
+Fits box FB05
+&lt;br&gt;
+mount holes 58x84mm</description>
+<wire x1="0" y1="0" x2="64" y2="0" width="0.127" layer="20"/>
+<wire x1="64" y1="0" x2="64" y2="90" width="0.127" layer="20"/>
+<wire x1="64" y1="90" x2="0" y2="90" width="0.127" layer="20"/>
+<wire x1="0" y1="90" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="61" y="3" drill="3.2"/>
+<hole x="61" y="87" drill="3.2"/>
+<hole x="3" y="87" drill="3.2"/>
+</package>
+<package name="FB05-105X84">
+<description>PCB for electrokit.se art#12109005
+&lt;br&gt;
+Fits box FB05
+&lt;br&gt;
+mount holes 105x84mm</description>
+<wire x1="0" y1="0" x2="111" y2="0" width="0.127" layer="20"/>
+<wire x1="111" y1="0" x2="111" y2="90" width="0.127" layer="20"/>
+<wire x1="111" y1="90" x2="0" y2="90" width="0.127" layer="20"/>
+<wire x1="0" y1="90" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="108" y="3" drill="3.2"/>
+<hole x="108" y="87" drill="3.2"/>
+<hole x="3" y="87" drill="3.2"/>
+</package>
+<package name="FB06-46X90">
+<description>PCB for electrokit.se art#12109006
+&lt;br&gt;
+Fits box FB06
+&lt;br&gt;
+mount holes 46x90mm</description>
+<wire x1="0" y1="0" x2="52" y2="0" width="0.127" layer="20"/>
+<wire x1="52" y1="0" x2="52" y2="96" width="0.127" layer="20"/>
+<wire x1="52" y1="96" x2="0" y2="96" width="0.127" layer="20"/>
+<wire x1="0" y1="96" x2="0" y2="0" width="0.127" layer="20"/>
+<hole x="3" y="3" drill="3.2"/>
+<hole x="49" y="3" drill="3.2"/>
+<hole x="49" y="93" drill="3.2"/>
+<hole x="3" y="93" drill="3.2"/>
+</package>
+<package name="FB06-73X90">
+<description>PCB for electrokit.se art#12109006
+&lt;br&gt;
+Fits box FB06
+&lt;br&gt;
+mount holes 73x90mm</description>
+</package>
+<package name="FB06-119X90">
+<description>PCB for electrokit.se art#12109006
+&lt;br&gt;
+Fits box FB06
+&lt;br&gt;
+mount holes 119x90mm</description>
+</package>
+<package name="FB06-157X122">
+<description>PCB for electrokit.se art#12109006
+&lt;br&gt;
+Fits box FB06
+&lt;br&gt;
+mount holes 157x122mm</description>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+<deviceset name="PCB_FOR_ELECTROKIT.SE_BOXES">
+<description>PCBs for electrokit.se boxes</description>
+<gates>
+</gates>
+<devices>
+<device name="FB03-50X52" package="FB03-50X52">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB01-X47" package="FB01-X43">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB02-36X" package="FB02-36X">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB04-85X47" package="FB04-85X47">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB05-105X84" package="FB05-105X84">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB05-47X84" package="FB05-47X84">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB05-58X84" package="FB05-58X84">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB06-119X90" package="FB06-119X90">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB06-157X122" package="FB06-157X122">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB06-46X90" package="FB06-46X90">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FB06-73X90" package="FB06-73X90">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCB_FOR_KJELL.COM_BOXES">
+<description>PCBs for kjell.com boxes</description>
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
