@@ -1,4 +1,4 @@
-(module My_Arduino_UNO_R3 (layer F.Cu) (tedit 5E4429D2)
+(module My_Arduino_UNO_R3 (layer F.Cu) (tedit 5E48589B)
   (descr "Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf")
   (tags "Arduino UNO R3")
   (fp_text reference REF** (at 1.27 3.81 180) (layer F.SilkS)

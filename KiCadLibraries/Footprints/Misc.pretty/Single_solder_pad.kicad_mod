@@ -1,4 +1,4 @@
-(module Single_solder_pad (layer F.Cu) (tedit 5E42F793)
+(module Single_solder_pad (layer F.Cu) (tedit 5E4D841F)
   (descr "Wire solder connection")
   (tags connector)
   (attr virtual)
