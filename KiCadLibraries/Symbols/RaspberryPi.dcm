@@ -18,6 +18,24 @@ K raspberrypi gpio
 F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf
 $ENDCMP
 #
+$CMP Raspberry_Pi_1_rev1
+D expansion header for Raspberry Pi 2 & 3
+K raspberrypi gpio
+F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf
+$ENDCMP
+#
+$CMP Raspberry_Pi_1_rev1_all_pin_ordered
+D expansion header for Raspberry Pi 2 & 3
+K raspberrypi gpio
+F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf
+$ENDCMP
+#
+$CMP Raspberry_Pi_1_rev1_pin_ordered
+D expansion header for Raspberry Pi 2 & 3
+K raspberrypi gpio
+F https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf
+$ENDCMP
+#
 $CMP Raspberry_Pi_2_3_all_pin_ordered
 D expansion header for Raspberry Pi 2 & 3
 K raspberrypi gpio

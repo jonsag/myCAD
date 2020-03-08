@@ -66,4 +66,16 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP ZS-042_4-pin_RTC_Module
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP ZS-042_6-pin_RTC_module_header
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 #End Doc Library
