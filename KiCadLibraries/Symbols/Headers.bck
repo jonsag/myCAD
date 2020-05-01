@@ -48,6 +48,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP 4-pin_I2C_LCD_header
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 5-pin_3-pole_3,5mm_audio_header
 D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
