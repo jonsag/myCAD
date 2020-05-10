@@ -1,6 +1,20 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 2-pole_power_in_screw_terminal
+#
+DEF 2-pole_power_in_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "2-pole_power_in_screw_terminal" 250 -225 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+S 125 50 375 -150 0 1 0 N
+X + 1 0 0 150 R 50 50 1 1 W
+X - 2 0 -100 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # 3-pole_Power_input_screw_terminal
 #
 DEF 3-pole_Power_input_screw_terminal U 0 40 Y Y 1 F N
@@ -16,6 +30,36 @@ X -12V 3 0 -200 150 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# 3-pole_RL-input_screw_terminal
+#
+DEF 3-pole_RL-input_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "3-pole_RL-input_screw_terminal" 250 -325 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+S 125 75 425 -275 0 1 0 N
+X Rin 1 0 0 150 R 50 50 1 1 I
+X Lin 2 0 -100 150 R 50 50 1 1 I
+X GND 3 0 -200 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# 3-pole_RL-output_screw_terminal
+#
+DEF 3-pole_RL-output_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "3-pole_RL-output_screw_terminal" 250 -325 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+S 125 75 425 -275 0 1 0 N
+X Rout 1 0 0 150 R 50 50 1 1 O
+X Lout 2 0 -100 150 R 50 50 1 1 O
+X GND 3 0 -200 150 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # 3-pole_screw_terminal
 #
 DEF 3-pole_screw_terminal U 0 40 Y Y 1 F N
@@ -25,9 +69,41 @@ F2 "" 175 125 50 H I C CNN
 F3 "" 175 125 50 H I C CNN
 DRAW
 S 125 75 425 -275 0 1 0 N
-X 1 1 0 0 150 R 50 50 1 1 W
-X 2 2 0 -100 150 R 50 50 1 1 W
-X 3 3 0 -200 150 R 50 50 1 1 W
+X Rin 1 0 0 150 R 50 50 1 1 I
+X Lin 2 0 -100 150 R 50 50 1 1 I
+X GND 3 0 -200 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# 4-pole_RL-input_screw_terminal
+#
+DEF 4-pole_RL-input_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "4-pole_RL-input_screw_terminal" 250 -425 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+S 125 50 400 -350 0 1 0 N
+X Rin+ 1 0 0 150 R 50 50 1 1 I
+X Rin- 2 0 -100 150 R 50 50 1 1 I
+X Lin+ 3 0 -200 150 R 50 50 1 1 I
+X Lin- 4 0 -300 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# 4-pole_RL-output_screw_terminal
+#
+DEF 4-pole_RL-output_screw_terminal U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "4-pole_RL-output_screw_terminal" 250 -425 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+S 125 50 450 -350 0 1 0 N
+X Rout+ 1 0 0 150 R 50 50 1 1 O
+X Rout- 2 0 -100 150 R 50 50 1 1 O
+X Lout+ 3 0 -200 150 R 50 50 1 1 O
+X Lout- 4 0 -300 150 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
