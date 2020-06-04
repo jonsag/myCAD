@@ -176,6 +176,27 @@ X Clock 3 -200 -100 150 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# 3-pin_potentiometer_output
+#
+DEF 3-pin_potentiometer_output U 0 40 Y Y 1 F N
+F0 "U" 225 100 50 H V C BNN
+F1 "3-pin_potentiometer_output" 200 -300 50 H V C BNN
+F2 "" 225 100 50 H I C CNN
+F3 "" 225 100 50 H I C CNN
+DRAW
+P 2 0 1 0 470 -160 470 -185 N
+P 2 0 1 0 470 -10 470 -30 N
+P 2 0 1 0 505 -65 505 -65 N
+P 2 0 1 0 535 -65 515 -85 N
+P 4 0 1 0 410 -100 435 -100 535 -65 505 -65 N
+P 5 0 1 0 175 50 550 50 550 -250 175 -250 175 50 N
+P 5 0 1 0 450 -30 490 -30 490 -160 450 -160 450 -30 N
+X PAO 1 0 0 200 R 50 50 1 1 I
+X PW0 2 0 -100 200 R 50 50 1 1 O
+X PB0 3 0 -200 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # 3_pin_Dallas_1-wire_connector
 #
 DEF 3_pin_Dallas_1-wire_connector J 0 40 Y Y 1 F N
