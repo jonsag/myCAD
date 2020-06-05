@@ -328,8 +328,8 @@ F1 "TEA5767_FM_Radio_Module" 375 -525 50 H V C CNN
 F2 "" 250 200 50 H I C CNN
 F3 "" 250 200 50 H I C CNN
 DRAW
-T 0 575 -200 18 0 0 0 "Antenna in" Normal 0 C C
-T 0 575 100 18 0 0 0 "Audio output" Normal 0 C C
+T 0 575 100 18 0 0 0 "Antenna in" Normal 0 C C
+T 0 575 -200 18 0 0 0 "Audio out" Normal 0 C C
 S 475 -425 675 -175 1 1 10 f
 S 475 -125 675 125 1 1 10 f
 S 675 -175 725 -275 1 1 10 F
