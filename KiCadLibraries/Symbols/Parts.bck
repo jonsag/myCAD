@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 20N6003
+D 20A 600V N-channel Enhancement Mode Power MOSFET
+K N-Channel MOSFET Logic-Level
+$ENDCMP
+#
 $CMP Dual_potentiometer
 D Dual potentiometer
 K resistor variable

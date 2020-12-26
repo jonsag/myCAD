@@ -110,6 +110,36 @@ X Sig 2 -200 -100 150 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
+# 2-pin_fan_output_header
+#
+DEF 2-pin_fan_output_header J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "2-pin_fan_output_header" 0 -200 50 H I C CNN
+F2 "" 50 -300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 111 -56 59 58 1106 0 1 0 N 170 -50 90 0
+A 130 -95 60 -484 484 0 1 0 N 170 -140 170 -50
+A 155 16 67 -1662 -772 0 1 0 N 90 0 170 -50
+A 183 5 57 -1033 50 0 1 0 N 170 -50 240 10
+A 200 -95 54 1237 -1237 0 1 0 N 170 -50 170 -140
+A 241 -62 72 908 1704 0 1 0 N 240 10 170 -50
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+C 170 -50 103 0 1 0 N
+P 2 0 1 0 20 -100 60 -100 N
+P 2 0 1 0 20 0 60 0 N
+P 2 0 1 0 40 -20 40 20 N
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+X VCC 1 -200 0 150 R 50 50 1 1 O
+X GND 2 -200 -100 150 R 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # 2-pin_power_input_header
 #
 DEF 2-pin_power_input_header J 0 40 Y Y 1 F N
