@@ -29,7 +29,7 @@ module header(type="male",xPinCount=1,yPinCount=1,height=11.5){
 		    //Block
 		    color([0.2,0.2,0.2])
 			 translate([(j*pinSpace)-1.25,-1.25,3])
-			 cube(pinSpace,2.5,2.5);
+			 cube([pinSpace,2.5,2.5]);
 		    
 	       }//End of xPin loop
 	  }//End of yPin loop

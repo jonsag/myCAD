@@ -2,7 +2,7 @@
 //led(5, "Green");
 
 module led(diameter, _color) {
-     difference() {
+  difference() {
 	  translate([0, 0, -1 / 2]) // ridge
 	       color(_color)
 	       cylinder(1, (diameter + 1) / 2, (diameter + 1) / 2, $fn = 100, center = true);
@@ -17,7 +17,7 @@ module led(diameter, _color) {
 
      translate([0, 0, diameter * 1.72 - diameter / 2]) // top dome
 	  color(_color)
-          sphere(diameter / 2, $fn = 100, center = true);
+          sphere(diameter / 2, $fn = 100);
 
      translate([-2.54 / 2, 0, -1 - 28.5 / 2]) // anode
 	  color("LightGrey")

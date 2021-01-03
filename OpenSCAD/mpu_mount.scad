@@ -1,3 +1,4 @@
+
 /*
 // what to show
 mount1 = true;
@@ -9,6 +10,8 @@ gy521 = true;
 
 // print?
 print = true;
+
+mpu6050_mount();
 */
 // oversize hole depths
 overSize = 1.07;
@@ -98,7 +101,7 @@ module mpu6050_mount() {
 		    mount3();
           }
      }
-
+     /*
      if (mount4) {
           if (print) {
                translate([mount1Width * 1.1, (mount1Depth + mount2ExtraDepth) * 1.1, mount3Height / 2])
@@ -115,6 +118,7 @@ module mpu6050_mount() {
 		    mpu6050_gy521();
 	  }
      }
+     */
 }
 
 module mount1() {
