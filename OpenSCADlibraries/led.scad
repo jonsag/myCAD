@@ -1,7 +1,7 @@
 
 //led(5, "Green");
 
-module led(diameter, _color) {
+module led(diameter, _color, legs = true) {
   difference() {
 	  translate([0, 0, -1 / 2]) // ridge
 	       color(_color)
@@ -19,6 +19,7 @@ module led(diameter, _color) {
 	  color(_color)
           sphere(diameter / 2, $fn = 100);
 
+     if (legs) {
      translate([-2.54 / 2, 0, -1 - 28.5 / 2]) // anode
 	  color("LightGrey")
 	  cube([0.6, 0.6, 28.5], center = true);
@@ -26,5 +27,5 @@ module led(diameter, _color) {
      translate([2.54 / 2, 0, -1 - 27 / 2]) // cathode
           color("LightGrey")
           cube([0.6, 0.6, 27], center = true);
-
+     }
 }

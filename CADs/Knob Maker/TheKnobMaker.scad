@@ -1,35 +1,41 @@
-// Knurled knob.scad
+// TheKnobMaker.scad
+//
+// Design: Jon Sagebrand
+// jonsagebrand@gmail.com
+//
 
-// knob dimensions
-knobDia = 30;
-knobDiaTop = 27; // if knob is cone shaped
-knobHeight = 15;
+///// knob dimensions /////
+knobDia = 23;
+knobDiaTop = 21; // if knob is cone shaped
+knobHeight = 14;
 
-// knob's bottom part
-knobBottomDia = 32; // only makes sense if larger than knobDia
-knobBottomDiaTop = 30;
-knobBottomHeight = 3; // this will be added to knobHeight, enter 0 for no bottom part
+///// knob's bottom part /////
+knobBottomDia = 25; // only makes sense if larger than knobDia
+knobBottomDiaTop = 23;
+knobBottomHeight = 2; // this will be added to knobHeight, enter 0 for no bottom part
 
-// outer ridges on knob
+///// outer ridges on knob /////
 outerRidged = true; // should we have a ridged knob for better grip
 outerRidgeAngle = 30; // not larger than 60 degrees
-noOfOuterRidges = 60;
-outerRidgesHeight = 8; // height if the outer ridges
+noOfOuterRidges = 30;
+outerRidgesHeight = 10; // height if the outer ridges
 outerRidgesProtrution = 0.8; // how high will the ridges be
 outerRidgesOffset = 0; // adjust this to move the ridges up and down on the knob
 
-// spherical indent on top, good for fast rotating
+///// spherical indent on top, good for fast rotating /////
+// also for making a concave top
 makeTopIndent = true;
-topIndentDia = 10;
-topIndentOffset = 7; // the indents center distance from knob edge
+centerTopIndent = false; // set this for making a concave top
+topIndentDia = 8; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
+topIndentOffset = 5.5; // the indents center distance from knob edge
 topIndentDepth = 3;
-rotateTopIndentAngle = 135; // rotate CW, when 0 indent is up
+rotateTopIndentAngle = 180; // rotate CW, when 0 indent is up
 
-// the shaft hole
+///// the shaft hole V
 shaftType = 2; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
 
 shaftDia = 6.3;
-shaftDepth = 14;
+shaftDepth = 13;
 shaftOversize = 0.6; // make the hole a bit bigger or smaller
 
 DSize = 4.5; // if d-shaped shaft, the smallest 'dia' on it
@@ -39,26 +45,44 @@ detentsAngle = 60; // detented shaft
 noOfDetents = 20;
 shaftInnerDia = 6;
 
-// hollow out the bottom
+///// hollow out the bottom /////
 hollowBottom = true;
 hollowDia = 26;
 hollowDepth = 3;
 
-// shaft that sticks out from the bottom
+///// shaft that sticks out from the bottom /////
 extraShaftLength = 0; // set to 0 for no extra shaft
 extraShaftDia = 10;
 
-// pointer
+///// pointer /////
 pointer = 0; // 0 = no point, 1 = pointy, 2 = blocky
 pointerLength = 4;
-pointerHeight = knobHeight / 2;//+ knobBottomHeight; //4;
+pointerHeight = 5; //knobHeight + knobBottomHeight;
 
 pointerAngle = 60; // when creating a pointy pointer
 
 pointerWidth = 4; // when creating a blocky pointer
 pointerLengthTop = 4;
 
-// misc parameters, not much to change below, if you don't know what you are doing
+///// text on top /////
+addText = false;
+textCurved = 0; // 0 = no curve, 1 = center curved up, 2 = center curved down
+textString = "Max";
+
+textSize = 4;
+textFont = "Liberation Sans:style=Bold"; //"Liberation Sans:style=Bold Italic";
+textSpacing = 1;
+textFn = 10;
+
+textDepth = 1; // set this to topIndentDepth if you still want text on the top despite you have a concave top
+
+textPlaceAngle = 0;
+
+textRaised = false; // set this to true if you still want text on the top desppite you have a concave top
+
+textOffset = 0; // set this to -topIndentDepth if you still want text on the top despite you have a concave top
+  
+///// misc parameters, not much to change below, if you don't know what you are doing
 roundness = 100;
 alphaValue = 1.0; // just ignore this
 isCenter = true;
@@ -95,6 +119,15 @@ union() {
     if (extraShaftLength == 0) {
       shaftHole();
     }
+
+    // indented text
+    if ((addText) && (!textRaised)) {
+      if (textCurved == 0) {
+	writeText();
+      } else {
+	writeCurvedText();
+      }
+    }
   }
 
   if (extraShaftLength > 0) {
@@ -106,6 +139,16 @@ union() {
       shaftHole();
     }
   }
+
+  // raised text                                                               
+  if ((addText) && (textRaised)) {
+    if (textCurved == 0) {
+      writeText();
+    } else {
+      writeCurvedText();
+    }
+  }
+  
 }
   
 
@@ -128,8 +171,10 @@ module topIndent() {
   // calculate the radius of the sphere
   sphRad = ((topIndentDia / 2) * (topIndentDia / 2) + topIndentDepth * topIndentDepth) / (2 * topIndentDepth);
 
+  indentCenter = centerTopIndent == true ? 0 : knobDia / 2 - topIndentOffset;
+  
   rotate([0, 0, -rotateTopIndentAngle])
-    translate([0, knobDia / 2 - topIndentOffset, knobHeight / 2 + sphRad - topIndentDepth])
+    translate([0, indentCenter, knobHeight / 2 + sphRad - topIndentDepth])
     sphere(r = sphRad, $fn = roundness);
 }
 
@@ -249,3 +294,36 @@ module blocky() {
     linear_extrude(height = pointerWidth, center  = true)
     polygon(points=[[0, 0], [pointerHeight, 0], [pointerHeight, knobDiaTop / 2 + pointerLengthTop], [0, yMax]]);
 }
+
+module writeText() {
+
+  textY = textRaised == true ? knobHeight / 2 : knobHeight / 2 - textDepth;
+  
+  color("violet", alpha = alphaValue)
+    translate([0, 0, textY + textOffset])
+    linear_extrude(height = textDepth) {
+    text(text = str(textString), font = textFont, size = textSize, halign = "center", valign = "center");
+  }
+}
+
+module writeCurvedText(){
+  chars = len(textString) + 1;
+
+  degrees = textCurved == 1 ? chars * textSize * 7: chars * textSize * 6;
+  radius = textCurved == 1 ? knobDiaTop / 2 - textSize * 1.5 : knobDiaTop / 2 - textSize;
+  
+  top = textCurved == 1 ? true : false;
+
+  textY = textRaised == true ? knobHeight / 2 : knobHeight / 2 - textDepth;
+
+  color("violet", alpha = alphaValue)
+    rotate([0, 0, -textPlaceAngle])
+    translate([0, 0, textY + textOffset])
+    for (i = [1 : chars]) {
+      rotate([0, 0, (top ? 1 : -1) * (degrees / 2 -i * (degrees / chars))])
+	translate([0, (top ? 1 : -1) * radius - (top ? 0 : textSize / 2), 0])
+	linear_extrude(textDepth)
+	text(textString[i - 1], halign = "center", font = textFont, size = textSize);
+    }
+}
+
