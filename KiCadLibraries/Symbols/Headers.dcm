@@ -84,6 +84,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP 6-pin_FTDI_header
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 6-pole_dual_potentiometer_header
 D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
