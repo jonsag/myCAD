@@ -18,8 +18,26 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP 2-pin_fan_output_header
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 2-pin_power_input_header
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 2x3_ISP_header
+D Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 2x5_ISP_header
+D Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
@@ -61,7 +79,13 @@ F ~
 $ENDCMP
 #
 $CMP 5-pin_3-pole_3,5mm_audio_header
-D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 6-pin_FTDI_header
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
