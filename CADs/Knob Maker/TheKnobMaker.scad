@@ -5,14 +5,14 @@
 //
 
 ///// knob dimensions /////
-knobDia = 23;
-knobDiaTop = 21; // if knob is cone shaped
-knobHeight = 14;
+knobDia = 30;
+knobDiaTop = 28; // if knob is cone shaped
+knobHeight = 15;
 
 ///// knob's bottom part /////
-knobBottomDia = 25; // only makes sense if larger than knobDia
-knobBottomDiaTop = 23;
-knobBottomHeight = 2; // this will be added to knobHeight, enter 0 for no bottom part
+knobBottomDia = 33; // only makes sense if larger than knobDia
+knobBottomDiaTop = 30;
+knobBottomHeight = 8; // this will be added to knobHeight, enter 0 for no bottom part
 
 ///// outer ridges on knob /////
 outerRidged = true; // should we have a ridged knob for better grip
@@ -26,16 +26,16 @@ outerRidgesOffset = 0; // adjust this to move the ridges up and down on the knob
 // also for making a concave top
 makeTopIndent = true;
 centerTopIndent = false; // set this for making a concave top
-topIndentDia = 8; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
-topIndentOffset = 5.5; // the indents center distance from knob edge
+topIndentDia = 20; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
+topIndentOffset = 15; // the indents center distance from knob edge, if you want it in the middle -> knodDia / 2
 topIndentDepth = 3;
 rotateTopIndentAngle = 180; // rotate CW, when 0 indent is up
 
 ///// the shaft hole V
-shaftType = 2; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
+shaftType = 1; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
 
-shaftDia = 6.3;
-shaftDepth = 13;
+shaftDia = 6;
+shaftDepth = 19;
 shaftOversize = 0.6; // make the hole a bit bigger or smaller
 
 DSize = 4.5; // if d-shaped shaft, the smallest 'dia' on it
@@ -47,8 +47,8 @@ shaftInnerDia = 6;
 
 ///// hollow out the bottom /////
 hollowBottom = true;
-hollowDia = 26;
-hollowDepth = 3;
+hollowDia = 29;
+hollowDepth = 6;
 
 ///// shaft that sticks out from the bottom /////
 extraShaftLength = 0; // set to 0 for no extra shaft
