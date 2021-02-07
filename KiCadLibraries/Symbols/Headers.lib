@@ -341,6 +341,29 @@ X PB0 3 0 -200 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# 3-pin_test_header
+#
+DEF 3-pin_test_header J 0 40 Y Y 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "3-pin_test_header" 0 -200 50 H I C CNN
+F2 "" 50 -300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X TP1 1 -200 100 150 R 50 50 1 1 I
+X TP2 2 -200 0 150 R 50 50 1 1 I
+X TP3 3 -200 -100 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # 3_pin_Dallas_1-wire_connector
 #
 DEF 3_pin_Dallas_1-wire_connector J 0 40 Y Y 1 F N

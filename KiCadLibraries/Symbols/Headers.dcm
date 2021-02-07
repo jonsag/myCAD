@@ -60,6 +60,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP 3-pin_test_header
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 3_pin_Dallas_1-wire_connector
 D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
