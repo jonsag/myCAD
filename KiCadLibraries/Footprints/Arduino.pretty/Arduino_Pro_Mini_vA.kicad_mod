@@ -5,10 +5,10 @@
   (fp_text value Arduino_Pro_Mini_vA (at 6.604 -6.096) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_line (start -1.27 -3.937) (end 16.764 -3.937) (layer F.Fab) (width 0.12))
-  (fp_line (start 16.764 -3.937) (end 16.764 29.337) (layer F.Fab) (width 0.12))
-  (fp_line (start 16.764 29.337) (end -1.27 29.337) (layer F.Fab) (width 0.12))
   (fp_line (start -1.27 29.337) (end -1.27 -3.937) (layer F.Fab) (width 0.12))
+  (fp_line (start 16.764 29.337) (end -1.27 29.337) (layer F.Fab) (width 0.12))
+  (fp_line (start 16.764 -3.937) (end 16.764 29.337) (layer F.Fab) (width 0.12))
+  (fp_line (start -1.27 -3.937) (end 16.764 -3.937) (layer F.Fab) (width 0.12))
   (fp_text user TXO (at 2.667 0) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
