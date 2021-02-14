@@ -12,6 +12,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP 2-pin_LED_header
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP 2-pin_NO_switch_header
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
