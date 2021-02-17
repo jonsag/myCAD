@@ -17,4 +17,10 @@ K resistor variable
 F ~
 $ENDCMP
 #
+$CMP ISP_header_Conn_02x05_Odd_Even
+D Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 #End Doc Library
