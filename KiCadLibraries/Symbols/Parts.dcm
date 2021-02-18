@@ -5,6 +5,12 @@ D 20A 600V N-channel Enhancement Mode Power MOSFET
 K N-Channel MOSFET Logic-Level
 $ENDCMP
 #
+$CMP 3_pole_Jumper_2_Open
+D Jumper, 2-pole, open
+K Jumper SPST
+F ~
+$ENDCMP
+#
 $CMP 6-pin_ISP_connector
 D Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
