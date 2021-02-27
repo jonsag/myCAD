@@ -5,13 +5,13 @@
 //
 
 ///// knob dimensions /////
-knobDia = 30;
-knobDiaTop = 28; // if knob is cone shaped
+knobDia = 20;
+knobDiaTop = 17; // if knob is cone shaped
 knobHeight = 15;
 
 ///// knob's bottom part /////
-knobBottomDia = 33; // only makes sense if larger than knobDia
-knobBottomDiaTop = 30;
+knobBottomDia = 25; // only makes sense if larger than knobDia
+knobBottomDiaTop = 20;
 knobBottomHeight = 8; // this will be added to knobHeight, enter 0 for no bottom part
 
 ///// outer ridges on knob /////
@@ -25,14 +25,14 @@ outerRidgesOffset = 0; // adjust this to move the ridges up and down on the knob
 ///// spherical indent on top, good for fast rotating /////
 // also for making a concave top
 makeTopIndent = true;
-centerTopIndent = false; // set this for making a concave top
-topIndentDia = 20; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
-topIndentOffset = 15; // the indents center distance from knob edge, if you want it in the middle -> knodDia / 2
+centerTopIndent = true; // set this for making a concave top
+topIndentDia = 13; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
+topIndentOffset = 10; // the indents center distance from knob edge, if you want it in the middle -> knodDia / 2
 topIndentDepth = 3;
 rotateTopIndentAngle = 180; // rotate CW, when 0 indent is up
 
 ///// the shaft hole V
-shaftType = 1; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
+shaftType = 2; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
 
 shaftDia = 6;
 shaftDepth = 19;
@@ -47,7 +47,7 @@ shaftInnerDia = 6;
 
 ///// hollow out the bottom /////
 hollowBottom = true;
-hollowDia = 29;
+hollowDia = 20;
 hollowDepth = 6;
 
 ///// shaft that sticks out from the bottom /////
@@ -55,9 +55,9 @@ extraShaftLength = 0; // set to 0 for no extra shaft
 extraShaftDia = 10;
 
 ///// pointer /////
-pointer = 0; // 0 = no point, 1 = pointy, 2 = blocky
+pointer = 2; // 0 = no point, 1 = pointy, 2 = blocky
 pointerLength = 4;
-pointerHeight = 5; //knobHeight + knobBottomHeight;
+pointerHeight = 10; //knobHeight + knobBottomHeight;
 
 pointerAngle = 60; // when creating a pointy pointer
 
