@@ -48,7 +48,7 @@ K connector
 F ~
 $ENDCMP
 #
-$CMP 3-pin_IRF5320_MOSFET_module_header
+$CMP 3-pin_HCMODU0083_IRF520_MOSFET_module_header
 D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
