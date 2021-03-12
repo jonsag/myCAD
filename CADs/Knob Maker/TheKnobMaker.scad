@@ -5,13 +5,13 @@
 //
 
 ///// knob dimensions /////
-knobDia = 20;
-knobDiaTop = 17; // if knob is cone shaped
+knobDia = 15;
+knobDiaTop = 13; // if knob is cone shaped
 knobHeight = 15;
 
 ///// knob's bottom part /////
-knobBottomDia = 25; // only makes sense if larger than knobDia
-knobBottomDiaTop = 20;
+knobBottomDia = 17; // only makes sense if larger than knobDia
+knobBottomDiaTop = 15;
 knobBottomHeight = 8; // this will be added to knobHeight, enter 0 for no bottom part
 
 ///// outer ridges on knob /////
@@ -26,13 +26,13 @@ outerRidgesOffset = 0; // adjust this to move the ridges up and down on the knob
 // also for making a concave top
 makeTopIndent = true;
 centerTopIndent = true; // set this for making a concave top
-topIndentDia = 13; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
+topIndentDia = 11; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
 topIndentOffset = 10; // the indents center distance from knob edge, if you want it in the middle -> knodDia / 2
 topIndentDepth = 3;
 rotateTopIndentAngle = 180; // rotate CW, when 0 indent is up
 
 ///// the shaft hole V
-shaftType = 2; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
+shaftType = 1; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
 
 shaftDia = 6;
 shaftDepth = 19;
@@ -47,7 +47,7 @@ shaftInnerDia = 6;
 
 ///// hollow out the bottom /////
 hollowBottom = true;
-hollowDia = 20;
+hollowDia = 15;
 hollowDepth = 6;
 
 ///// shaft that sticks out from the bottom /////
@@ -55,9 +55,9 @@ extraShaftLength = 0; // set to 0 for no extra shaft
 extraShaftDia = 10;
 
 ///// pointer /////
-pointer = 2; // 0 = no point, 1 = pointy, 2 = blocky
+pointer = 1; // 0 = no point, 1 = pointy, 2 = blocky
 pointerLength = 4;
-pointerHeight = 10; //knobHeight + knobBottomHeight;
+pointerHeight = 12; //knobHeight + knobBottomHeight;
 
 pointerAngle = 60; // when creating a pointy pointer
 

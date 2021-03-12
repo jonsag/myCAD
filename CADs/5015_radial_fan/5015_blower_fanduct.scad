@@ -4,12 +4,12 @@
 // jonsagebrand@gmail.com
 
 // blower library by nophead at https://github.com/nophead/NopSCADlib
-include <../NopSCADlib/core.scad>
+include <../../OpenSCADlibraries/NopSCADlib/core.scad>
 //use <../NopSCADlib/utils/layout.scad>
-include <../NopSCADlib/vitamins/blowers.scad>
+include <../../OpenSCADlibraries/NopSCADlib/vitamins/blowers.scad>
 
 // e3d model by Professional3D at https://www.thingiverse.com/thing:548237
-include <../E3Dv6_hotend/e3d_v6_all_metall_hotend.scad>
+include <../../OpenSCADlibraries/E3Dv6_hotend/e3d_v6_all_metall_hotend.scad>
 
 // shroud by kbowley at https://www.thingiverse.com/thing:2429054
 
@@ -19,14 +19,14 @@ include <../E3Dv6_hotend/e3d_v6_all_metall_hotend.scad>
 deleteClamp = true;
 
 // shroud type
-shroudType = 0; // 0: semicircle, rounded top, two holes, 1: kbowley's shroud, 2: single blow point, 3: triangular shaped shroud, >3: no shroud
+shroudType = 3; // 0: semicircle, rounded top, two holes, 1: kbowley's shroud, 2: single blow point, 3: triangular shaped shroud, >3: no shroud
 
 // should we also show the blower and it's screws
-showBlower = false;
-showBlowerScrews = false;
+showBlower = true;
+showBlowerScrews = true;
 
 // should we show the hotend
-showHotend = false;
+showHotend = true;
 
 // position of the duct connecting to the shroud
 
