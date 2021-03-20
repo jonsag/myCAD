@@ -307,6 +307,38 @@ X IO_1 9 1050 -700 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# DFRobot_Gravity_TDS-meter
+#
+DEF DFRobot_Gravity_TDS-meter U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "DFRobot_Gravity_TDS-meter" 250 -325 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+T 0 350 -100 50 0 0 0 TDS Normal 0 C C
+S 125 75 425 -275 0 1 0 N
+X A 1 0 0 150 R 50 50 1 1 O
+X + 2 0 -100 150 R 50 50 1 1 W
+X - 3 0 -200 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# DFRobot_Gravity_pH-sensor
+#
+DEF DFRobot_Gravity_pH-sensor U 0 40 Y Y 1 F N
+F0 "U" 175 125 50 H V C CNN
+F1 "DFRobot_Gravity_pH-sensor" 250 -325 50 H V C CNN
+F2 "" 175 125 50 H I C CNN
+F3 "" 175 125 50 H I C CNN
+DRAW
+T 0 350 -100 50 0 0 0 pH Normal 0 C C
+S 125 75 425 -275 0 1 0 N
+X A 1 0 0 150 R 50 50 1 1 O
+X + 2 0 -100 150 R 50 50 1 1 W
+X - 3 0 -200 150 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # Dual_potentiometer
 #
 DEF Dual_potentiometer RV 0 40 Y N 1 F N
