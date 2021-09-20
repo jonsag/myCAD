@@ -29,4 +29,9 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP KY-019_relay_module
+D Single Pole Dual Throw
+K Relay
+$ENDCMP
+#
 #End Doc Library

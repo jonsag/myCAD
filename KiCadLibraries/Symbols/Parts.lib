@@ -1,6 +1,60 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 1phase_induction_motor
+#
+DEF 1phase_induction_motor U 0 40 Y N 1 F N
+F0 "U" 900 -200 50 H V C CNN
+F1 "1phase_induction_motor" 1300 -350 50 H V C CNN
+F2 "" 900 -200 50 H I C CNN
+F3 "" 900 -200 50 H I C CNN
+DRAW
+A 100 -450 50 901 -901 0 1 0 N 100 -400 100 -500
+A 100 -350 50 901 -901 0 1 0 N 100 -300 100 -400
+A 100 -250 50 901 -901 0 1 0 N 100 -200 100 -300
+A 300 -650 50 -1799 -1 0 1 0 N 250 -650 350 -650
+A 400 -650 50 -1799 -1 0 1 0 N 350 -650 450 -650
+A 500 -650 50 -1799 -1 0 1 0 N 450 -650 550 -650
+C 250 -350 50 0 1 0 N
+C 400 -500 50 0 1 0 N
+C 400 -350 50 0 1 0 N
+C 400 -350 255 0 1 0 N
+C 400 -200 50 0 1 0 N
+C 550 -350 50 0 1 0 N
+T 0 400 -800 30 0 0 0 "Auxiliary winding" Normal 0 C C
+T 0 50 -1050 30 0 0 0 "Black - Auxiliary winding - high resistance" Normal 0 L C
+T 0 200 400 30 0 0 0 "Centrifugal switch" Normal 0 C C
+T 0 50 -950 30 0 0 0 "Green - Main winding - low resistance" Normal 0 L C
+T 0 -300 -350 30 0 0 0 "Main winding" Normal 0 C C
+T 0 750 100 30 0 0 0 "Run capacitor" Normal 0 L C
+T 0 50 -1300 30 0 0 0 "Run capacitor - low capacitance" Normal 0 L C
+T 0 750 300 30 0 0 0 "Start capacitor" Normal 0 L C
+T 0 50 -1400 30 0 0 0 "Start capacitor - high capacitance (electrolytic)" Normal 0 L C
+T 0 350 -1150 30 0 0 0 "White - Centrifugal switch" Normal 0 C C
+S 0 0 800 -750 0 1 10 N
+P 2 0 0 0 100 -100 100 100 N
+P 2 0 0 0 100 100 500 100 N
+P 2 0 0 0 150 300 240 330 N
+P 2 0 0 0 230 300 230 330 N
+P 2 0 0 0 230 300 500 300 N
+P 2 0 0 0 500 50 500 50 N
+P 2 0 0 0 500 150 500 50 N
+P 2 0 0 0 500 350 500 250 N
+P 2 0 0 0 550 100 700 100 N
+P 2 0 0 0 550 150 550 50 N
+P 2 0 0 0 550 350 550 250 N
+P 3 0 0 0 550 -650 700 -650 700 100 N
+P 3 0 0 0 700 100 700 300 550 300 N
+P 2 0 1 0 100 -600 100 -650 N
+P 2 0 1 0 250 -650 100 -650 N
+P 3 0 1 0 50 -600 100 -600 100 -500 N
+P 3 0 1 0 50 -100 100 -100 100 -200 N
+P 3 0 1 0 100 100 100 300 150 300 N
+X Main1 1 -150 -100 200 R 50 50 1 1 I
+X Main2 2 -150 -600 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # 2-pole_power_in_screw_terminal
 #
 DEF 2-pole_power_in_screw_terminal U 0 40 Y Y 1 F N

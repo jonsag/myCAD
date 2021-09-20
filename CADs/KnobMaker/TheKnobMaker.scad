@@ -4,15 +4,17 @@
 // jonsagebrand@gmail.com
 //
 
+knobMaker();
+
 ///// knob dimensions /////
-knobDia = 15;
-knobDiaTop = 13; // if knob is cone shaped
+knobDia = 20;
+knobDiaTop = 15; // if knob is cone shaped
 knobHeight = 15;
 
 ///// knob's bottom part /////
-knobBottomDia = 17; // only makes sense if larger than knobDia
-knobBottomDiaTop = 15;
-knobBottomHeight = 8; // this will be added to knobHeight, enter 0 for no bottom part
+knobBottomDia = 14; // only makes sense if larger than knobDia
+knobBottomDiaTop = 20;
+knobBottomHeight = 4; // this will be added to knobHeight, enter 0 for no bottom part
 
 ///// outer ridges on knob /////
 outerRidged = true; // should we have a ridged knob for better grip
@@ -26,36 +28,36 @@ outerRidgesOffset = 0; // adjust this to move the ridges up and down on the knob
 // also for making a concave top
 makeTopIndent = true;
 centerTopIndent = true; // set this for making a concave top
-topIndentDia = 11; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
+topIndentDia = 12; // if making a concave top, set this to a sensible value, ie something a bit smaller than the top dia
 topIndentOffset = 10; // the indents center distance from knob edge, if you want it in the middle -> knodDia / 2
 topIndentDepth = 3;
 rotateTopIndentAngle = 180; // rotate CW, when 0 indent is up
 
-///// the shaft hole V
-shaftType = 1; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
+///// the shaft hole
+shaftType = 2; // 0 = round shaft, 1 = D-shape shaft, 2 = detented shaft
 
 shaftDia = 6;
-shaftDepth = 19;
-shaftOversize = 0.6; // make the hole a bit bigger or smaller
+shaftDepth = 12; // from the absolute bottom of knob
+shaftOversize = 0.8; // make the hole a bit bigger or smaller
 
 DSize = 4.5; // if d-shaped shaft, the smallest 'dia' on it
 rotateDAngle = 0; // rotate the d cutout CW, when 0 flat face face up
 
-detentsAngle = 60; // detented shaft
+detentsAngle = 80; // detented shaft
 noOfDetents = 20;
 shaftInnerDia = 6;
 
 ///// hollow out the bottom /////
 hollowBottom = true;
-hollowDia = 15;
+hollowDia = 10;
 hollowDepth = 6;
 
 ///// shaft that sticks out from the bottom /////
 extraShaftLength = 0; // set to 0 for no extra shaft
-extraShaftDia = 10;
+extraShaftDia = 8.5;
 
 ///// pointer /////
-pointer = 1; // 0 = no point, 1 = pointy, 2 = blocky
+pointer = 0; // 0 = no point, 1 = pointy, 2 = blocky
 pointerLength = 4;
 pointerHeight = 12; //knobHeight + knobBottomHeight;
 
@@ -78,7 +80,7 @@ textDepth = 1; // set this to topIndentDepth if you still want text on the top d
 
 textPlaceAngle = 0;
 
-textRaised = false; // set this to true if you still want text on the top desppite you have a concave top
+textRaised = false; // set this to true if you still want text on the top despite you have a concave top
 
 textOffset = 0; // set this to -topIndentDepth if you still want text on the top despite you have a concave top
   
@@ -89,7 +91,7 @@ isCenter = true;
 
 
 // ########## start drawing ##########
-
+module knobMaker() {
 union() {
   difference() {
     union() {
@@ -150,7 +152,7 @@ union() {
   }
   
 }
-  
+}
 
 module knobMainBody() {
   union() {
@@ -327,3 +329,6 @@ module writeCurvedText(){
     }
 }
 
+if ($preview) {
+  knobMaker();
+ }
