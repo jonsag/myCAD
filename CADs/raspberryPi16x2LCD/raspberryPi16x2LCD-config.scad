@@ -8,10 +8,10 @@ include <../../OpenSCADlibraries/NopSCADlib/vitamins/inserts.scad>;
 include <../../OpenSCADlibraries/NopSCADlib/vitamins/screws.scad>;
 
 // what to show
-print = false;
+print = true;
 
 printBottom = true;
-printLid = true;
+printLid = false;
 
 // LCD cutout
 hasLCD = true;
@@ -84,9 +84,15 @@ extraXMinus = 0;
 extraYPlus = 0;
 extraYMinus = 0;
 
-extraZ = 15;
+extraZ = 0;
 
 raspClearance = 1;
+
+makeMountHoles = true;
+boxMountsDia = 4.5;
+
+ventilationX = true;
+ventilationY = true;
 
 // cutouts for RPi in box
 phonoDia = 7;

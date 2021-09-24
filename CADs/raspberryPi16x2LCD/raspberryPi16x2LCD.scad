@@ -95,65 +95,115 @@ module drawRPiStands() {
 
 ///////////////////////////////////////////////// bottom part
 module drawBoxBottom() {
-  translate([extraXPlus / 2 - extraXMinus / 2,
-	     extraYPlus / 2 - extraYMinus / 2,
-	     boxHeight / 2 - mountPostHeight - mountPostTopHeight - wallThickness]) {
-
-    difference() {
-      // box outer shell
-      cube([boxWidth, boxDepth, boxHeight], center = true);
-      
-      // the hollow
-      translate([0, 0, wallThickness / 2])
-	color("red")
-	cube([boxWidth - wallThickness * 2,
-	      boxDepth - wallThickness * 2,
-	      boxHeight - wallThickness + 0.1], center = true);
-      
-      // cutouts in the shell
-      RPiCutOuts();
-    }
-  }
-
-  translate([extraXPlus / 2 - extraXMinus / 2,
-	     extraYPlus / 2 - extraYMinus / 2,
-	     0]) {
-    
-    // lid mounts
-    for (i = [0 : 1 : 3]) {
-      translate(lidMountPos[i]) {
-	if ((hasInserts) && (!print)) {
-	  translate([0, 0, lidMountHeight / 2])
-	    insert(F1BM3);
-        }
-	color("green")
-	  union() {
-	  difference() {
-	    cylinder(h = lidMountHeight, d = lidMountDia, center = true, $fn = roundness);
-	    
+  difference() {
+    union() {
+      translate([extraXPlus / 2 - extraXMinus / 2,
+		 extraYPlus / 2 - extraYMinus / 2,
+		 boxHeight / 2 - mountPostHeight - mountPostTopHeight - wallThickness]) {
+	
+	difference() {
+	  // box outer shell
+	  cube([boxWidth, boxDepth, boxHeight], center = true);
+	  
+	  // the hollow
+	  translate([0, 0, wallThickness / 2])
 	    color("red")
-	      cylinder(h = lidMountHeight + 0.2, d = lidMountScrewDia, center = true, $fn = roundness);
+	    cube([boxWidth - wallThickness * 2,
+		  boxDepth - wallThickness * 2,
+		  boxHeight - wallThickness + 0.1], center = true);
+	  
+	  // cutouts in the shell
+	  RPiCutOuts();
+	}
+      }
+      
+      translate([extraXPlus / 2 - extraXMinus / 2,
+		 extraYPlus / 2 - extraYMinus / 2,
+		 2]) {
+	
+	// lid mounts
+	for (i = [0 : 1 : 3]) {
+	  translate(lidMountPos[i]) {
+	    if ((hasInserts) && (!print)) {
+	      translate([0, 0, lidMountHeight / 2])
+		insert(F1BM3);
+	    }
+	    color("green")
+	      union() {
+	      difference() {
+		cylinder(h = lidMountHeight, d = lidMountDia, center = true, $fn = roundness);
+		
+		color("red")
+		  cylinder(h = lidMountHeight + 0.2, d = lidMountScrewDia, center = true, $fn = roundness);
+	      }
+	    }
+	  }
+	}
+	
+	// conical bottom part
+	for (i = [0 : 1 : 3]) {
+	  color("blue")
+	    hull() {
+	    
+	    // small low part
+	    translate(boxBottomCornersPos[i])
+	      linear_extrude(height = 1, center = true)
+	      circle(d = 0.1);
+	    
+	    // large upper part
+	    translate([0, 0, - lidMountHeight / 2 - 0.5])
+	      translate(lidMountPos[i])
+	      translate([0, 0, 0])
+	      linear_extrude(height = 1, center = true)
+	      circle(d = lidMountDia);
+	  }
+	}
+      }   
+    }
+
+    // make mount holes
+    if (makeMountHoles) {
+      for (i = [0 : 1 : 1]) {
+	for (j = [0 : 1 : 1]) {
+	  translate([extraXPlus / 2 - extraXMinus / 2 - boxWidth / 2 + lidMountDia + boxMountsDia * 1.5 + i * (boxWidth - 2 * (lidMountDia + boxMountsDia * 1.5)),
+		     extraYPlus / 2 - extraYMinus / 2 - boxDepth / 2 + wallThickness + boxMountsDia  / 2 + 1 + j * (boxDepth - 2 * (wallThickness + boxMountsDia  / 2 + 1)),
+		     - mountPostHeight - mountPostTopHeight - wallThickness / 2])
+	    color("red")
+	    cylinder(h = wallThickness + 0.2, d = boxMountsDia, center = true, $fn = roundness);
+	}
+      }
+  
+      // ventilation grid on the left side
+      if (ventilationX) {
+	translate([extraXPlus / 2 - extraXMinus / 2 - boxWidth / 2 + wallThickness / 2,
+		   extraYPlus / 2 - extraYMinus / 2,
+		   mountPostHeight + mountPostTopHeight])
+	  rotate([0, 90, 0])
+	  color("red")
+	  difference() {
+	  scale([1, 2, 1])
+	    cylinder(h = wallThickness + 0.2, d = raspHeight, center = true, $fn = roundness);
+	  for (i = [0 : 1 : 9]) {
+	    translate([0, - raspHeight  + i * raspHeight * 2 / 10, 0])
+	      cube([raspHeight, 2, wallThickness + 0.4], center = true);
 	  }
 	}
       }
-    }
-    
-    // conical bottom part
-    for (i = [0 : 1 : 3]) {
-      color("blue")
-	hull() {
-	
-	// small low part
-	translate(boxBottomCornersPos[i])
-	  linear_extrude(height = 1, center = true)
-	  circle(d = 0.1);
-	
-	// large upper part
-	translate([0, 0, - lidMountHeight / 2 - 0.5])
-	  translate(lidMountPos[i])
-	  translate([0, 0, 0])
-	  linear_extrude(height = 1, center = true)
-	  circle(d = lidMountDia);
+      // ventilation grid on the far side
+      if (ventilationY) {
+	translate([extraXPlus / 2 - extraXMinus / 2,
+		   extraYPlus / 2 - extraYMinus / 2 + boxDepth / 2 - wallThickness / 2,
+		   mountPostHeight + mountPostTopHeight])
+	  rotate([90, 0, 0])
+	  color("red")
+	  difference() {
+	  scale([3, 1, 1])
+	    cylinder(h = wallThickness + 0.2, d = raspHeight, center = true, $fn = roundness);
+	  for (i = [0 : 1 : 29]) {
+	    translate([- raspHeight * 3 / 2 + i * raspHeight * 3 / 15, 0, 0])
+	      cube([2, raspHeight, wallThickness + 0.4], center = true);
+	  }
+	}
       }
     }
   }
