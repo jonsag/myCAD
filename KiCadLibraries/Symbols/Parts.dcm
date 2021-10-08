@@ -34,4 +34,10 @@ D Single Pole Dual Throw
 K Relay
 $ENDCMP
 #
+$CMP Transformer_dual_secondary_center_common
+D Transformer, single primary, dual secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
 #End Doc Library
