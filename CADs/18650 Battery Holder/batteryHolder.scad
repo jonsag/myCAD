@@ -1,24 +1,31 @@
 include <18650Battery.scad>
 
-
+//how many cells
 noOfCells = 4;
 
+// also draw the cells and contacts
 drawCell = false;
 
+// size of the battery cells
 cellLength = 65;
 cellDia = 18;
 cellDiaExtra = 0;
 
+// how far away from the cells are the contacts
 negCOffset = -3.5;
 posCOffset = 1.6;
 
+// extra distance from the cells to the contacts base
 compPosExtra = 1.6;
 compNegExtra = 3.5;
 
+// the flange holding the contacts
 terminalHolderDepth = 1;
 
+// thickness of holder
 wallThickness = 2;
 
+// the cut outs for the contacts
 termWidthExtra = 2;
 termHeight = 5;
 
@@ -30,7 +37,6 @@ thHeight = cellDia + cellDiaExtra;
 ///// start drawing /////
 for (i =[ 0 : noOfCells - 1]) {
   translate([(cellDia + cellDiaExtra + wallThickness) * i, 0, 0])
-    //rotY = i / 2 == round( i / 2 ) ? 0 : 180;
     if (i / 2 == round( i / 2 )) {
       rotate([0, 0, 0])
 	cell_n_holders();
