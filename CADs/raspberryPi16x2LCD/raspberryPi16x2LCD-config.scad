@@ -1,23 +1,23 @@
 // raspberryPi16x2LCD-config.scad
 
 // include NopSCADLib
-include <../../OpenSCADlibraries/NopSCADlib/core.scad>;
-include <../../OpenSCADlibraries/NopSCADlib/vitamins/pcbs.scad>;
-include <../../OpenSCADlibraries/NopSCADlib/vitamins/displays.scad>;
-include <../../OpenSCADlibraries/NopSCADlib/vitamins/inserts.scad>;
-include <../../OpenSCADlibraries/NopSCADlib/vitamins/screws.scad>;
+include <../../OpenSCADlibraries/NopSCADlib/core.scad>
+include <../../OpenSCADlibraries/NopSCADlib/vitamins/displays.scad>
+include <../../OpenSCADlibraries/NopSCADlib/vitamins/inserts.scad>
+include <../../OpenSCADlibraries/NopSCADlib/vitamins/pcbs.scad>
+include <../../OpenSCADlibraries/NopSCADlib/vitamins/screws.scad>
 
 // what to show
 print = true;
 
-printBottom = true;
-printLid = false;
+printBottom = false;
+printLid = true;
 
 // LCD cutout
-hasLCD = true;
+hasLCD = false;
 
 // buttons
-hasButtons = true;
+hasButtons = false;
 
 // threaded inserts
 hasInserts = true;
@@ -63,8 +63,8 @@ LCDProtrusion = 0;
 // Buttons
 buttonDia = 6;
 
-buttonTexts = ["1", "2", "3", "4"];
-buttonColor = ["yellow", "blue", "green", "red"];
+buttonTexts = [ "1", "2", "3", "4" ];
+buttonColor = [ "yellow", "blue", "green", "red" ];
 
 textXOffset = 0;
 textYOffset = -10;
@@ -118,61 +118,62 @@ mountHoleDiaDisp = 2.5;
 roundness = 100;
 
 ///// calculatons, don't touch!
-boxWidth = raspWidth + wallThickness * 2 + raspClearance * 2 + extraXPlus + extraXMinus;
-boxDepth = raspDepth + wallThickness * 2 + raspClearance * 2 + extraYPlus + + extraYMinus + (lidMountScrewDia + (lidMountDia - lidMountScrewDia) / 2) * 2;
-boxHeight = wallThickness + mountPostHeight + mountPostTopHeight + raspHeight + raspExtraHeight + lidRecess + extraZ + 2;
+boxWidth = raspWidth + wallThickness * 2 + raspClearance * 2 + extraXPlus +
+           extraXMinus;
+boxDepth = raspDepth + wallThickness * 2 + raspClearance * 2 + extraYPlus +
+           +extraYMinus +
+           (lidMountScrewDia + (lidMountDia - lidMountScrewDia) / 2) * 2;
+boxHeight = wallThickness + mountPostHeight + mountPostTopHeight + raspHeight +
+            raspExtraHeight + lidRecess + extraZ + 2;
 
-mountPostZ = - mountPostHeight / 2 - mountPostTopHeight;
-postPos = [[- raspWidth / 2 + 3.5,
-	    - raspDepth / 2 + 3.5,
-	    mountPostZ],
-	   [- raspWidth / 2 + 3.5 + 58,
-	    - raspDepth / 2 + 3.5,
-	    mountPostZ],
-	   [- raspWidth / 2 + 3.5 + 58,
-	    - raspDepth / 2 + 3.5 + 49,
-	    mountPostZ],
-	   [- raspWidth / 2 + 3.5,
-	    - raspDepth / 2 + 3.5+ 49,
-	    mountPostZ]];
+mountPostZ = -mountPostHeight / 2 - mountPostTopHeight;
+postPos = [
+    [ -raspWidth / 2 + 3.5, -raspDepth / 2 + 3.5, mountPostZ ],
+    [ -raspWidth / 2 + 3.5 + 58, -raspDepth / 2 + 3.5, mountPostZ ],
+    [ -raspWidth / 2 + 3.5 + 58, -raspDepth / 2 + 3.5 + 49, mountPostZ ],
+    [ -raspWidth / 2 + 3.5, -raspDepth / 2 + 3.5 + 49, mountPostZ ]
+];
 
-lidMountPosZ =  -lidMountHeight / 2 + raspHeight + extraZ + raspExtraHeight;
-mountWallThickness = min((lidMountDia - lidMountScrewDia) / 2,
-			 wallThickness);
-lidMountPos = [[- boxWidth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
-		- boxDepth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
-		lidMountPosZ],
-	       [boxWidth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
-		- boxDepth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
-		lidMountPosZ],
-	       [boxWidth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
-		boxDepth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
-		lidMountPosZ],
-	       [- boxWidth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
-		boxDepth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
-		lidMountPosZ]];
+lidMountPosZ = -lidMountHeight / 2 + raspHeight + extraZ + raspExtraHeight;
+mountWallThickness = min((lidMountDia - lidMountScrewDia) / 2, wallThickness);
+lidMountPos = [
+    [
+        -boxWidth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
+        -boxDepth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
+        lidMountPosZ
+    ],
+    [
+        boxWidth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
+        -boxDepth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
+        lidMountPosZ
+    ],
+    [
+        boxWidth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
+        boxDepth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
+        lidMountPosZ
+    ],
+    [
+        -boxWidth / 2 + lidMountDia / 2 + wallThickness - mountWallThickness,
+        boxDepth / 2 - lidMountDia / 2 - wallThickness + mountWallThickness,
+        lidMountPosZ
+    ]
+];
 
-boxBottomPos = 0 - mountPostHeight - mountPostTopHeight - wallThickness + wallThickness;
+boxBottomPos =
+    0 - mountPostHeight - mountPostTopHeight - wallThickness + wallThickness;
 
-boxBottomCornersPos = [[- boxWidth / 2 + 0.05,
-			- boxDepth / 2 + 0.05,
-			boxBottomPos],
-		       [boxWidth / 2 - 0.05,
-			- boxDepth / 2 + 0.05,
-			boxBottomPos],
-		       [boxWidth / 2 - 0.05,
-			boxDepth / 2 - 0.05,
-			boxBottomPos],
-		       [-boxWidth / 2 + 0.05,
-			boxDepth / 2 - 0.05,
-			boxBottomPos]];
+boxBottomCornersPos = [
+    [ -boxWidth / 2 + 0.05, -boxDepth / 2 + 0.05, boxBottomPos ],
+    [ boxWidth / 2 - 0.05, -boxDepth / 2 + 0.05, boxBottomPos ],
+    [ boxWidth / 2 - 0.05, boxDepth / 2 - 0.05, boxBottomPos ],
+    [ -boxWidth / 2 + 0.05, boxDepth / 2 - 0.05, boxBottomPos ]
+];
 
 cutOutDepthX = wallThickness + extraXPlus + raspClearance + 0.2;
-cutOutDepthY = wallThickness + extraYMinus + raspClearance + (lidMountScrewDia + (lidMountDia - lidMountScrewDia) / 2) + 0.2;
+cutOutDepthY = wallThickness + extraYMinus + raspClearance +
+               (lidMountScrewDia + (lidMountDia - lidMountScrewDia) / 2) + 0.2;
 
-LCDMountPos = [[-75 / 2, -31 / 2, -8 + postHeightDisp / 2 +1],
-	       [75 / 2, -31 / 2, -8 + postHeightDisp / 2+1],
-	       [75 / 2, 31 / 2, -8 + postHeightDisp / 2+1],
-	       [-75 / 2, 31 / 2, -8 + postHeightDisp / 2+1]];
-
-buttonsCount = len(buttonTexts);
+LCDMountPos = [
+    [ -75 / 2, -31 / 2, -8 + postHeightDisp / 2 + 1 ],
+    [ 75 / 2, -31 / 2, -8 + postHeightDisp / 2 + 1 ],
+    [ 75 / 2, 31 / 2, -8 + postHeightDisp / 2 + 1 ],    [ -75 / 2, 31 / 2, -8 + postHeightDisp / 2 + 1 ]];buttonsCount = len(buttonTexts);
