@@ -17,6 +17,18 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP CHT11
+D Temperature and humidity module
+K Digital temperature humidity sensor
+F http://aosong.com/en/products-21.html
+$ENDCMP
+#
+$CMP DHT22,CM2303
+D Temperature and humidity module
+K Digital temperature humidity sensor
+F http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
+$ENDCMP
+#
 $CMP Dual_potentiometer
 D Dual potentiometer
 K resistor variable
