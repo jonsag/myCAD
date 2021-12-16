@@ -1,3 +1,29 @@
+// batteryHolder.scad
+// by Jon Sagebrand
+
+// size of the battery cells
+cellLength = 70.5;
+cellDia = 19;
+cellDiaExtra = 0; // extra space for the cell
+
+cellPosDia = 5.5;
+cellPosHeight = 1; // height of the protrusion of the postive side
+
+contPosLargeDia = 10;
+contPosSmallDia = 2;
+
+// battery contacts
+contWidth = 16.5;
+contHeight = 16;
+contThick = 0.3;
+
+contPosHeight = 2.4;
+contNegHeight = 8;
+
+termWidth = 3.5;
+termLength = 7;
+
+// now include the other file
 include <18650Battery.scad>
 
 //how many cells
@@ -6,23 +32,18 @@ noOfCells = 4;
 // also draw the cells and contacts
 drawCell = false;
 
-// size of the battery cells
-cellLength = 65;
-cellDia = 18;
-cellDiaExtra = 0;
-
 // how far away from the cells are the contacts
-negCOffset = -3.5;
-posCOffset = 1.6;
+negCOffset = 0;
+posCOffset = 0;
 
 // extra distance from the cells to the contacts base
-compPosExtra = 1.6;
-compNegExtra = 3.5;
+compPosExtra = 2.5;
+compNegExtra = 8;
 
 // the flange holding the contacts
-terminalHolderDepth = 1;
+terminalHolderDepth = 1.5;
 
-// thickness of holder
+// wall thickness of holder
 wallThickness = 2;
 
 // the cut outs for the contacts
@@ -31,8 +52,9 @@ termHeight = 5;
 
 ///// calculations
 thWidth = cellDia + cellDiaExtra;
-thDepth = terminalHolderDepth;
 thHeight = cellDia + cellDiaExtra;
+
+thDepth = terminalHolderDepth;
 
 ///// start drawing /////
 for (i =[ 0 : noOfCells - 1]) {
@@ -58,12 +80,12 @@ module cell_n_holders() {
   difference() {
     union() {
       // positive contact holder
-      translate([0, cellLength / 2 + posCOffset, 0])
+      translate([0, cellLength / 2 + posCOffset + compPosExtra, 0])
 	rotate([0, 0, 0])
 	terminalHolder();
       
       // negative contact holder
-      translate([0, -cellLength / 2 + negCOffset, 0])
+      translate([0, -cellLength / 2 + negCOffset - compNegExtra, 0])
 	rotate([0, 0, 180])
 	terminalHolder();
       
@@ -76,10 +98,6 @@ module cell_n_holders() {
 }
 
 module terminalHolder() {
-  thWidth = cellDia + cellDiaExtra;
-  thDepth = 1;
-  thHeight = cellDia + cellDiaExtra;
-
   translate([0, -thDepth / 2, 0])
   difference() {
     cube([thWidth, thDepth, thHeight], center = true);
