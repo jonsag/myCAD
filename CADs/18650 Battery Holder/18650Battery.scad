@@ -1,22 +1,8 @@
-//batteryHolder.scad
-
+//18650Battery.scad
 
 // include some NOP scad libraries by nophead, https://github.com/nophead/NopSCADlib
-include <../../OpenSCADlibraries/NopSCADlib//utils/core/core.scad>
+include <../../OpenSCADlibraries/NopSCADlib/utils/core/core.scad>
 include <../../OpenSCADlibraries/NopSCADlib/vitamins/batteries.scad>
-
-/*
-contWidth = 16.5;
-contHeight = 16;
-contThick = 0.3;
-
-termWidth = 2.86;
-termLength = 6;
-
-cellLength = 65; // including cellPosHeight
-cellDia = 18.3;
-cellPosHeight = 25;
-*/
 
 // bcontact = ["bcontact", 9.33, 9.75, 0.4, 2.86, 6, [1.6, 3, 5], [4.5, batt_spring]];
 my_bcontact = ["bcontact", contWidth, contHeight, contThick, termWidth, termLength,
