@@ -89,7 +89,7 @@
   (pad 14 thru_hole oval (at -0.15 32.72) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 15 thru_hole oval (at -0.15 35.26) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 16 thru_hole oval (at -0.15 37.8) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

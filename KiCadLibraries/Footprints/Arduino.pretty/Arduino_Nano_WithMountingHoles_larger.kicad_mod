@@ -70,7 +70,7 @@
   (pad "" np_thru_hole circle (at 15.24 -2.54) (size 1.78 1.78) (drill 1.78) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 15.24 38.1) (size 1.78 1.78) (drill 1.78) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 0 38.1) (size 1.78 1.78) (drill 1.78) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Module.3dshapes/Arduino_Nano_WithMountingHoles.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Module.3dshapes/Arduino_Nano_WithMountingHoles.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

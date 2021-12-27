@@ -29,7 +29,7 @@
   (pad 2 thru_hole oval (at 0 2.54) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask))
   (pad 3 thru_hole oval (at 0 5.08) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask))
   (pad 4 thru_hole oval (at 0 7.62) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Sensor.3dshapes/Aosong_DHT11_5.5x12.0_P2.54mm.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Sensor.3dshapes/Aosong_DHT11_5.5x12.0_P2.54mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

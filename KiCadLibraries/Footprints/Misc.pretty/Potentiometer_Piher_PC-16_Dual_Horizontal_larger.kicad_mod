@@ -44,7 +44,7 @@
   (pad 6 thru_hole oval (at -7.5 -10) (size 3.048 2.34) (drill 1.3) (layers *.Cu *.Mask))
   (pad 5 thru_hole oval (at -7.5 -5) (size 3.048 2.34) (drill 1.3) (layers *.Cu *.Mask))
   (pad 4 thru_hole oval (at -7.5 0) (size 3.048 2.34) (drill 1.3) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Potentiometer_THT.3dshapes/Potentiometer_Piher_PC-16_Dual_Horizontal.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Piher_PC-16_Dual_Horizontal.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

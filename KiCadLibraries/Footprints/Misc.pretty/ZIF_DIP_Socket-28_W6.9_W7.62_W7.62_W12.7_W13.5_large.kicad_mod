@@ -72,7 +72,7 @@
   (pad 26 thru_hole oval (at 7.62 5.08) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 27 thru_hole oval (at 7.62 2.54) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
   (pad 28 thru_hole oval (at 7.62 0) (size 2.54 1.524) (drill 1) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Socket.3dshapes/DIP_Socket-28_W6.9_W7.62_W10.16_W12.7_W13.5_3M_228-4817-00-0602J.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Socket.3dshapes/DIP_Socket-28_W6.9_W7.62_W10.16_W12.7_W13.5_3M_228-4817-00-0602J.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

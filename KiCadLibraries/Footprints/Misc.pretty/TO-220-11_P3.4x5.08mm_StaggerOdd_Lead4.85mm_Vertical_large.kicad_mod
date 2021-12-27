@@ -56,7 +56,7 @@
   (pad 9 thru_hole oval (at 13.6 0) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
   (pad 10 thru_hole oval (at 15.3 -5.08) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
   (pad 11 thru_hole oval (at 17 0) (size 1.524 2.54) (drill 1) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Package_TO_SOT_THT.3dshapes/TO-220-11_P3.4x5.08mm_StaggerOdd_Lead4.85mm_Vertical.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-220-11_P3.4x5.08mm_StaggerOdd_Lead4.85mm_Vertical.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

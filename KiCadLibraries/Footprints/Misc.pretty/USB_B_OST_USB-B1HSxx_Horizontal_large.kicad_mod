@@ -34,7 +34,7 @@
   (pad 4 thru_hole oval (at 2 0) (size 1.7 2.54) (drill 0.92 (offset 0 -0.508)) (layers *.Cu *.Mask))
   (pad 5 thru_hole circle (at 4.71 -4.77) (size 3.5 3.5) (drill 2.33) (layers *.Cu *.Mask))
   (pad 5 thru_hole circle (at 4.71 7.27) (size 3.5 3.5) (drill 2.33) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_B_OST_USB-B1HSxx_Horizontal.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_B_OST_USB-B1HSxx_Horizontal.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
