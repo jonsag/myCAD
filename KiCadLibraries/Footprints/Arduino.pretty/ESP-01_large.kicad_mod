@@ -1,6 +1,6 @@
 (footprint "ESP-01_large" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61CA27F2)
+  (tedit 61D34D53)
   (descr "Module, ESP-8266, ESP-01, 8 pin")
   (tags "Module ESP-8266 ESP8266")
   (attr through_hole)
@@ -38,7 +38,7 @@
   (pad "6" thru_hole oval (at 0 5.08) (size 2.54 1.7272) (drill 1.016 (offset -0.381 0)) (layers *.Cu *.Mask) (tstamp 6164ddd4-98ad-4e32-b191-f2b0df2f391b))
   (pad "7" thru_hole oval (at 2.54 7.62) (size 2.54 1.7272) (drill 1.016 (offset 0.381 0)) (layers *.Cu *.Mask) (tstamp 6a72f44e-fd05-4ae8-bfc4-2d9973b480bf))
   (pad "8" thru_hole oval (at 0 7.62) (size 2.54 1.7272) (drill 1.016 (offset -0.381 0)) (layers *.Cu *.Mask) (tstamp ac1b48f0-98fe-4cff-beb1-b7cdf9a57961))
-  (model "/home/jon/Documents/CodeWorkspace/myCAD/KiCadLibraries/3dmodels/ESP8266_ESP01_cp.wrl"
+  (model "${MY_3DMODELS}/ESP-01.3dshapes/ESP8266_ESP01_cp.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
