@@ -1,6 +1,6 @@
 (footprint "Arduino_Micro" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61D35B22)
+  (tedit 61D4BBE6)
   (descr "Arduino Micro")
   (tags "Arduino Micro")
   (attr through_hole)
@@ -85,7 +85,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${MY_3DMODELS}/Arduino2.3dshapes/arduino_micro.x3d"
+  (model "${MY_3DMODELS}/Arduino2.3dshapes/arduino_micro.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
