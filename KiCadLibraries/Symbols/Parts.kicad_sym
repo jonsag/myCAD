@@ -635,6 +635,14 @@
     (symbol "3-wire_Load_Cell_0_1"
       (polyline
         (pts
+          (xy 4.064 -8.509)
+          (xy 6.096 -6.858)
+        )
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
           (xy 5.08 -8.89)
           (xy 5.08 -10.16)
         )
@@ -645,6 +653,22 @@
         (pts
           (xy 5.08 -3.81)
           (xy 5.08 -5.08)
+        )
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 6.096 -6.858)
+          (xy 5.842 -6.858)
+        )
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 6.096 -6.858)
+          (xy 6.096 -7.112)
         )
         (stroke (width 0.1524) (type default) (color 0 0 0 0))
         (fill (type none))
