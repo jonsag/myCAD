@@ -1,4 +1,4 @@
-(footprint "SSD1306_I2C_0.96_OLED_display_large" (version 20211014) (generator pcbnew)
+(footprint "SSD1306_I2C_0.96_OLED_display_no_display_large" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
   (tedit 602EB76E)
   (descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
@@ -8,13 +8,13 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 1b5cc1a4-b1dd-4fce-b16b-bb7bc1bf1651)
   )
-  (fp_text value "SSD1306_I2C_0.96_OLED_display_large" (at 3.81 26.67) (layer "F.Fab")
+  (fp_text value "SSD1306_I2C_0.96_OLED_display_no_display_large" (at 3.81 26.67) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 21ffae55-e139-48ca-80a7-f833bd6207b9)
   )
-  (fp_text user "SSD1306" (at 3.81 12.7 unlocked) (layer "F.SilkS")
+  (fp_text user "SSD1306" (at 3.81 11.43 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp bb07426b-0d03-4acd-bc73-7ee5d2ce453c)
+    (tstamp d0d7ddec-caa6-4451-8794-47a985817246)
   )
   (fp_text user "${REFERENCE}" (at 3.81 0 180) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -56,12 +56,12 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
   )
-  (model "${MY_3DMODELS}/Misc.3dshapes/ER-OLEDM0.96-1-I2C_3D.stp"
+  (model "${MY_3DMODELS}/Misc.3dshapes/ER-OLEDM0.96-1-I2C_3D.stp" hide
     (offset (xyz 3.81 -12.065 10.795))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl" hide
     (offset (xyz 0 0 10.16))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 -180 -90))
