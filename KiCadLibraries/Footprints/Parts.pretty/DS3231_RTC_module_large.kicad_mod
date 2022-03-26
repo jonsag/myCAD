@@ -69,4 +69,9 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
+  (model "/home/jon/Documents/CodeWorkspace/myCAD/KiCadLibraries/3dmodels/Misc.3dshapes/User Library-DS3231 Mini.STEP"
+    (offset (xyz 17.145 4.826 12.065))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 -180))
+  )
 )
