@@ -189,7 +189,37 @@
   (pad "33" thru_hole oval (at 11.43 -2.54) (size 2.032 2.032) (drill 0.762) (layers *.Cu *.Mask) (tstamp 7447a6e7-8205-46ba-afca-d0fa8f90c95a))
   (pad "34" thru_hole oval (at 13.97 -2.54) (size 2.032 2.032) (drill 0.762) (layers *.Cu *.Mask) (tstamp 53c85970-3e21-4fae-a84f-721cfc0513b5))
   (model "${MY_3DMODELS}/Arduino2.3dshapes/arduino_pro_mini.wrl"
+    (offset (xyz 0 0 7.62))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x12_P2.54mm_Vertical.wrl"
     (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x12_P2.54mm_Vertical.wrl"
+    (offset (xyz 15.24 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl"
+    (offset (xyz 0 0 10.16))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 180 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl"
+    (offset (xyz 15.24 0 10.16))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.wrl"
+    (offset (xyz 12.7 -8.89 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.wrl"
+    (offset (xyz 12.7 -19.05 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
