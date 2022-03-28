@@ -111,7 +111,27 @@
   (pad "11" thru_hole oval (at 53 10.16) (size 2.032 1.524) (drill 1) (layers *.Cu *.Mask) (tstamp 506d606c-eb03-4e26-9837-bff995bb7770))
   (pad "12" thru_hole oval (at 53 12.7) (size 2.032 1.524) (drill 1) (layers *.Cu *.Mask) (tstamp 6be5e877-9f62-4e4e-b37e-9ea54e5d88a0))
   (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.wrl"
+    (offset (xyz 0 0 10.16))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl"
     (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+    (offset (xyz 52.959 -5.08 10.16))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 -180 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.wrl"
+    (offset (xyz 52.959 -5.08 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "/home/jon/Documents/CodeWorkspace/myCAD/KiCadLibraries/3dmodels/Misc.3dshapes/1.8 TFT 128x160 SPI.STEP"
+    (offset (xyz 26.4668 -8.89 10.795))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
