@@ -1109,7 +1109,7 @@
     (property "Reference" "U" (id 0) (at 11.43 -5.08 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ESP-01h" (id 1) (at 15.24 -27.94 0)
+    (property "Value" "ESP-01h" (id 1) (at 15.24 -7.62 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (id 2) (at 10.795 12.7 90)
