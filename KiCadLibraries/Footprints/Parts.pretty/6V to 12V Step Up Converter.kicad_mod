@@ -62,4 +62,9 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
+  (model "${MY_3DMODELS}/Misc.3dshapes/05KJ_Mini_PCB_Regulator_With_Pin_Assem_.STEP"
+    (offset (xyz 23.0378 4.2418 0.635))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
 )
