@@ -76,13 +76,18 @@
   (pad "28" thru_hole oval (at 15.24 5.08) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask) (tstamp a4f92507-f2b3-4f75-987d-55004c3588b9))
   (pad "29" thru_hole oval (at 15.24 2.54) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask) (tstamp aff48226-032f-4dae-a36a-f783c883d29a))
   (pad "30" thru_hole oval (at 15.24 0) (size 2.54 1.524) (drill 0.8) (layers *.Cu *.Mask) (tstamp 8338e846-812b-41c6-ad83-c397e10d62a8))
-  (model "${KICAD6_3DMODEL_DIR}/Module.3dshapes/Arduino_Nano_WithMountingHoles.wrl" hide
+  (model "${MY_3DMODELS}/Arduino2.3dshapes/arduino_nano.wrl"
+    (offset (xyz 0 0 7.366))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x15_P2.54mm_Vertical.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${MY_3DMODELS}/Arduino2.3dshapes/arduino_nano.wrl"
-    (offset (xyz 0 0 0))
+  (model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x15_P2.54mm_Vertical.wrl"
+    (offset (xyz 15.24 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )

@@ -8,7 +8,7 @@ knobMaker();
 
 ///// knob dimensions /////
 knobDia = 20;
-knobDiaTop = 15; // if knob is cone shaped
+knobDiaTop = 20; // if knob is cone shaped
 knobHeight = 15;
 
 ///// knob's bottom part /////
@@ -329,6 +329,4 @@ module writeCurvedText(){
     }
 }
 
-if ($preview) {
   knobMaker();
- }
