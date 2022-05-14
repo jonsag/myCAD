@@ -2,11 +2,11 @@
   (layer "F.Cu")
   (tedit 0)
   (attr through_hole)
-  (fp_text reference "REF**" (at -2.286 -12.954 unlocked) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0.762 -2.286 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp abdf1fc0-a5f4-4a26-adc8-ba7216defb10)
   )
-  (fp_text value "HX711 Load Cell Amplifier large" (at -2.286 -11.454 unlocked) (layer "F.Fab")
+  (fp_text value "HX711 Load Cell Amplifier large" (at 2.032 14.986 unlocked) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 69814d9b-0367-4de8-9718-43b37031d240)
   )
