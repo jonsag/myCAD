@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 980de259-7303-486d-8bb1-c7f250ba9490)
   )
-  (fp_text value "RaspberryPi_3b+_Hat_large" (at 6.592 25.918 90) (layer "F.Fab") hide
+  (fp_text value "RaspberryPi_3b+_Hat_large" (at 6.592 25.918 90) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ec2ab47f-4fdc-421d-a8d6-3c0fa7e6dc97)
   )

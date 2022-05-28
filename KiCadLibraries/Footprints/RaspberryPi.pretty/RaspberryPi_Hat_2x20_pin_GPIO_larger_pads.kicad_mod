@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 8cbc9fbb-b82b-44d7-b34a-045a99527532)
   )
-  (fp_text value "RaspberryPi_Hat_2x20_pin_GPIO_larger_pads" (at 6.592 25.918 90) (layer "F.Fab") hide
+  (fp_text value "RaspberryPi_Hat_2x20_pin_GPIO_larger_pads" (at 6.592 25.918 90) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d2bfc38e-db9a-425b-bcec-719fbd93f839)
   )
