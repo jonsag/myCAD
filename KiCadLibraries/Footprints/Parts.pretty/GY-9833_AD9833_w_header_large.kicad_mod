@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 99d38f8f-9694-49ea-b8ef-82dd66af8be0)
   )
-  (fp_text value "GY-9833_AD9833_w_header_large" (at 5 18.25) (layer "F.Fab") hide
+  (fp_text value "GY-9833_AD9833_w_header_large" (at 5 18.25) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 27a58c41-ae0c-45f6-b4b8-8e02832b2000)
   )

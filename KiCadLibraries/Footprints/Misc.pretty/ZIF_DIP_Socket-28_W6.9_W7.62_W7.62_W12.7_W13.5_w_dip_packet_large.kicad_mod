@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 717b25a7-c9c2-4f6f-b744-a96113325c99)
   )
-  (fp_text value "ZIF_DIP_Socket-28_W6.9_W7.62_W7.62_W12.7_W13.5_w_dip_packet_large" (at 5.08 40.939999) (layer "F.Fab") hide
+  (fp_text value "ZIF_DIP_Socket-28_W6.9_W7.62_W7.62_W12.7_W13.5_w_dip_packet_large" (at 5.08 40.939999) (layer "F.Fab")
     (effects (font (size 0.6 0.6) (thickness 0.09)))
     (tstamp 9404ce4c-2ce6-4f88-8062-13577800d257)
   )

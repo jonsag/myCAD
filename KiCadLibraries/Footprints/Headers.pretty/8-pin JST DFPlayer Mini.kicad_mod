@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 46a2a546-75e0-4854-97ae-c320637646c7)
   )
-  (fp_text value "8-pin JST DFPlayer Mini" (at 8.75 4.600001) (layer "F.Fab") hide
+  (fp_text value "8-pin JST DFPlayer Mini" (at 8.7 10.5) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp e9e979f3-1111-4527-9ca6-6bbf4706a28e)
   )

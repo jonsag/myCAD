@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp b30c12fa-d863-4867-a99c-6a26a2e7fac7)
   )
-  (fp_text value "6-pole_5-NO_switch_screw_terminal" (at 2 29.5) (layer "F.Fab") hide
+  (fp_text value "6-pole_5-NO_switch_screw_terminal" (at 2 29.5) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 06d27c4b-5a73-43be-9387-ec7a071078dc)
   )

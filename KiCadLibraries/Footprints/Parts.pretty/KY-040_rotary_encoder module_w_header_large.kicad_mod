@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp dae4bd12-ba86-4a9b-983d-8878b694f71e)
   )
-  (fp_text value "KY-040_rotary_encoder module_w_header_large" (at -9.75 18.5) (layer "F.Fab") hide
+  (fp_text value "KY-040_rotary_encoder module_w_header_large" (at -9.75 18.5) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 683494ab-83e3-4e0e-9f47-9b1d32dcbe51)
   )

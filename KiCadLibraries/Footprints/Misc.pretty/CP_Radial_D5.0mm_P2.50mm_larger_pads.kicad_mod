@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp fce260b4-2f85-4c92-93e2-43f93fc71362)
   )
-  (fp_text value "CP_Radial_D5.0mm_P2.50mm_larger_pads" (at 1.25 3.75) (layer "F.Fab") hide
+  (fp_text value "CP_Radial_D5.0mm_P2.50mm_larger_pads" (at 1.25 3.75) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 34d59cc1-3439-4843-a10a-71c13bc21267)
   )

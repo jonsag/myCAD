@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp e2cf9b02-b825-445e-85ca-e70d2c2dcbe1)
   )
-  (fp_text value "3-pin JST Potentiometer" (at 2.5 4.600001) (layer "F.Fab") hide
+  (fp_text value "3-pin JST Potentiometer" (at 2.6 8.7) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 4a09634e-803d-4358-82b0-769733b220d9)
   )

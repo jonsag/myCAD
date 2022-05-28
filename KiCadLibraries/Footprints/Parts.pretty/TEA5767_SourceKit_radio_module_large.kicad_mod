@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ed556aa8-4d27-42b5-9942-034534935c2d)
   )
-  (fp_text value "TEA5767_SourceKit_radio_module_large" (at 12.7 21.25) (layer "F.Fab") hide
+  (fp_text value "TEA5767_SourceKit_radio_module_large" (at 12.7 21.25) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 3bc0f376-9c3a-4334-9736-f484abde9e1f)
   )

@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cef00e52-80d0-4462-8c6f-7dc14be6f792)
   )
-  (fp_text value "6-pin_5_LED_header_large" (at 2.286 16.002) (layer "F.Fab") hide
+  (fp_text value "6-pin_5_LED_header_large" (at 2.286 16.002) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 55ffc67d-b0b6-4a22-93fb-692af7f31df5)
   )

@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d13b39d6-c126-471c-b644-71e06cd0bd00)
   )
-  (fp_text value "2-pin JST Audio" (at 1.25 4.600001) (layer "F.Fab") hide
+  (fp_text value "2-pin JST Audio" (at 1.4 6.2) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 18108091-1621-4559-8aff-bbf40ad40eea)
   )

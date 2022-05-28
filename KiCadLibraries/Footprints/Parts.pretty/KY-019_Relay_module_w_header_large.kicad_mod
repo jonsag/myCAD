@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 50bf0603-39ab-40f4-bddd-79d04b4bc08f)
   )
-  (fp_text value "KY-019_Relay_module_w_header_large" (at 20.5 19.75) (layer "F.Fab") hide
+  (fp_text value "KY-019_Relay_module_w_header_large" (at 20.5 19.75) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp a4c7123f-7470-4490-8139-e6a1509ee92e)
   )

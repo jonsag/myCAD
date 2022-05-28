@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cd10a8b8-ee93-41f9-b8ec-7cf4243a323b)
   )
-  (fp_text value "2-pole_Fan_power_screw_terminal" (at 0.9 -5.3) (layer "F.Fab") hide
+  (fp_text value "2-pole_Fan_power_screw_terminal" (at 3.8 8.8) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2d610dfd-d102-495c-b231-c5a0cd02efc6)
   )

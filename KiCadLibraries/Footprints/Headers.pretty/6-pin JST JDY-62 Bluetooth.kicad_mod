@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp bfaf0ed9-a4b8-4705-8a48-20547ed8500c)
   )
-  (fp_text value "6-pin JST JDY-62 Bluetooth" (at 6.25 4.600001) (layer "F.Fab") hide
+  (fp_text value "6-pin JST JDY-62 Bluetooth" (at 6.1 9.8) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 9c709b6a-7a58-4337-9312-f91c400a13a5)
   )

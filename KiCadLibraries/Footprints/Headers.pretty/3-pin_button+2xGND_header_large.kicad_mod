@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 95e16380-a797-4ef6-bc92-67bfd44afe75)
   )
-  (fp_text value "3-pin_button+2xGND_header_large" (at 0 7.41) (layer "F.Fab") hide
+  (fp_text value "3-pin_button+2xGND_header_large" (at 0 7.9) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2f1df4d4-ea41-4805-990c-fc64e9beb3f8)
   )

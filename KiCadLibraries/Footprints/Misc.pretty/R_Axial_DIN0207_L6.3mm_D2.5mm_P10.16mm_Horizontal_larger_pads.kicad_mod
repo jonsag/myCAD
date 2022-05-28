@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2f353db8-1131-4c50-a58f-e7120f2d5cbb)
   )
-  (fp_text value "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" (at 5.08 2.37) (layer "F.Fab") hide
+  (fp_text value "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" (at 5.08 2.37) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 4b6f546b-7074-48e4-926a-b0e846b19b48)
   )

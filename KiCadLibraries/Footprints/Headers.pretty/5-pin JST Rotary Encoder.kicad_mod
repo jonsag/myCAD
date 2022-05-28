@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 3d6c0804-2924-4025-b602-03c521102396)
   )
-  (fp_text value "5-pin JST Rotary Encoder" (at 5 4.600001) (layer "F.Fab") hide
+  (fp_text value "5-pin JST Rotary Encoder" (at 4.9 8.4) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 0a8c8528-4361-4bb3-88a8-68820d91d5ff)
   )

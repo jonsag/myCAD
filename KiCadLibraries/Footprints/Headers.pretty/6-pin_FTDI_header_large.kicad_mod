@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 0e72f7b9-4c22-4b5a-95c5-c1cee4030d52)
   )
-  (fp_text value "6-pin_FTDI_header_large" (at 2.286 16.002) (layer "F.Fab") hide
+  (fp_text value "6-pin_FTDI_header_large" (at 2.286 16.002) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d70b40d9-35b9-4ecf-9a29-2b22f1994cf4)
   )

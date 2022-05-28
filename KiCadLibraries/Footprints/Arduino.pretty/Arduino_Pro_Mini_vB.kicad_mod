@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 675b32e3-2a17-4a3a-9c3d-71168ed3c498)
   )
-  (fp_text value "Arduino_Pro_Mini_vB" (at 6.604 -6.096) (layer "F.Fab") hide
+  (fp_text value "Arduino_Pro_Mini_vB" (at 8.1 30.5) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 6e983cd3-7cc1-43f0-afc9-4c50a63fb125)
   )

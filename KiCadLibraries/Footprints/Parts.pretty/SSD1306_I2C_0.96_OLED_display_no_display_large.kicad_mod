@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 1b5cc1a4-b1dd-4fce-b16b-bb7bc1bf1651)
   )
-  (fp_text value "SSD1306_I2C_0.96_OLED_display_no_display_large" (at 3.81 26.67) (layer "F.Fab") hide
+  (fp_text value "SSD1306_I2C_0.96_OLED_display_no_display_large" (at 3.81 26.67) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 21ffae55-e139-48ca-80a7-f833bd6207b9)
   )

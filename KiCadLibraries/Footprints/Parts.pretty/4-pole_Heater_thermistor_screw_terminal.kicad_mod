@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d9fc8576-4810-4f73-b459-4abb235b90fe)
   )
-  (fp_text value "4-pole_Heater_thermistor_screw_terminal" (at 0.9 -5.3) (layer "F.Fab") hide
+  (fp_text value "4-pole_Heater_thermistor_screw_terminal" (at 1.9 18.9) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 18398d4d-eaad-41d2-ab8c-cf0dd656a4de)
   )

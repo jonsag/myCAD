@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d518c7db-9a4d-4905-902c-7b6d95f659cb)
   )
-  (fp_text value "DS3231_RTC_module_large" (at 9 13.5) (layer "F.Fab") hide
+  (fp_text value "DS3231_RTC_module_large" (at 5.6 13.6) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 614f538e-5f2b-401d-b0ab-3346d3ff44e4)
   )

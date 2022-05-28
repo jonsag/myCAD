@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 84992e8c-7393-4e9a-be98-d42179b14689)
   )
-  (fp_text value "3-pole_screw_terminal_RL_output" (at 0.9 -5.3) (layer "F.Fab") hide
+  (fp_text value "3-pole_screw_terminal_RL_output" (at -0.4 13.6) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 2e4152c4-3262-4109-9dce-58a7bbc2de2b)
   )

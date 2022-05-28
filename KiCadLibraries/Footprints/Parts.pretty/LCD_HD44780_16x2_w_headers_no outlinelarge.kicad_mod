@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp ca1eaef4-a99b-4731-9406-88bcd2198655)
   )
-  (fp_text value "LCD_HD44780_16x2_w_headers_no outlinelarge" (at 52.5 31 180) (layer "F.Fab") hide
+  (fp_text value "LCD_HD44780_16x2_w_headers_no outlinelarge" (at 17.8 -3 180) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cb02b683-fed1-4d66-b59d-0145b8906902)
   )

@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 9a362e27-95f1-451a-9a37-6ad937150e07)
   )
-  (fp_text value "6-pin_5_switch_header" (at 2.032 15.748) (layer "F.Fab") hide
+  (fp_text value "6-pin_5_switch_header" (at 2.032 15.748) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 131c53c0-4c00-48b9-b8b9-98a9af6d80d4)
   )

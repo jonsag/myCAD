@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 5a09e810-b999-43ea-a816-48c714fe42f6)
   )
-  (fp_text value "MPU-9255_w_header_large" (at 8.6 25.6) (layer "F.Fab") hide
+  (fp_text value "MPU-9255_w_header_large" (at 8.6 25.6) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 300d4ff7-02fc-4da0-aed0-105ae28ee9fd)
   )

@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cdb51342-07be-44c9-aae9-c15b7e1e8215)
   )
-  (fp_text value "JDY-62_bluetooth_module_large" (at 0 15.03) (layer "F.Fab") hide
+  (fp_text value "JDY-62_bluetooth_module_large" (at 0 15.03) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 8bd335e3-f9cc-4141-b62c-89e6f2cea9b6)
   )

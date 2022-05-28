@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp f2b54470-c210-48e0-af04-601bc8f080b6)
   )
-  (fp_text value "4-pin Serial Connection header large" (at 0 10.39) (layer "F.Fab") hide
+  (fp_text value "4-pin Serial Connection header large" (at 0 10.39) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d53e0302-0db9-4055-a945-e949bb69a01a)
   )

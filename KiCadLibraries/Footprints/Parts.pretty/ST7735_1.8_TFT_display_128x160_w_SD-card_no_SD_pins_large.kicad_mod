@@ -8,7 +8,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 87022312-00a0-4594-aacc-4c6c5aa50309)
   )
-  (fp_text value "ST7735_1.8_TFT_display_128x160_w_SD-card_no_SD_pins_large" (at 27.6 27.94) (layer "F.Fab") hide
+  (fp_text value "ST7735_1.8_TFT_display_128x160_w_SD-card_no_SD_pins_large" (at 27.6 27.94) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp f99bc5cb-fcf9-4a47-8c7c-459e2678ec06)
   )

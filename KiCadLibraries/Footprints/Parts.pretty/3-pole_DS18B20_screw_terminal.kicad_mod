@@ -6,7 +6,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 8759f374-5e05-4350-8b59-b3c99a65e158)
   )
-  (fp_text value "3-pole_DS18B20_screw_terminal" (at 0 13.97) (layer "F.Fab") hide
+  (fp_text value "3-pole_DS18B20_screw_terminal" (at 0 13.97) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp d88ec4df-98a5-41dc-99ba-793c89f7790c)
   )
