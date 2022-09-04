@@ -26,4 +26,9 @@
   (pad "2" thru_hole oval (at 0 -3.75) (size 3 2) (drill 1.75) (layers *.Cu *.Mask) (tstamp c51c48cb-5373-47c4-95c0-d5fe653d210b))
   (pad "3" thru_hole oval (at 65 0) (size 3 2) (drill 1.75) (layers *.Cu *.Mask) (tstamp a17f6b40-aa43-4bdc-a6e1-b4a5deb7dd80))
   (pad "4" thru_hole oval (at 65 -3.5) (size 3 2) (drill 1.75) (layers *.Cu *.Mask) (tstamp 3c83ba39-95df-4126-9e72-b2a973569376))
+  (model "${MY_3DMODELS}/Misc.3dshapes/potentio_assem_asm.stp"
+    (offset (xyz 32.5 1.5 6))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
