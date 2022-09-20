@@ -66,4 +66,9 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
+  (model "${MY_3DMODELS}/Misc.3dshapes/FT232.wrl"
+    (offset (xyz 3.175 99.314 98.425))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 90 0 90))
+  )
 )
