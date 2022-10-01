@@ -75,7 +75,7 @@
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "/home/jon/KiCad/MyLibraries/3dmodels/Misc.3dshapes/User Library-3M_Textool_20Way.STEP"
+  (model "${MY_3DMODELS}/Misc.3dshapes/User Library-3M_Textool_20Way.STEP"
     (offset (xyz 3.81 -9.525 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))
