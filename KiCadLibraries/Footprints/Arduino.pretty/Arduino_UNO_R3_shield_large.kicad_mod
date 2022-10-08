@@ -4,7 +4,7 @@
   (descr "Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf")
   (tags "Arduino UNO R3")
   (attr through_hole)
-  (fp_text reference "REF**" (at 2.6 -1.2 180) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 2.8 1.4 180) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 73f31a27-22e2-4b0d-af8c-3e3842f9c76f)
   )
