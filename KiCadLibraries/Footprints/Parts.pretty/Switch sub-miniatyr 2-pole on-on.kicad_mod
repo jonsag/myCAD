@@ -1,0 +1,193 @@
+(footprint "Switch sub-miniatyr 2-pole on-on"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -2.37 -5.45 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "96bb3ce5-2476-44b9-9858-25c3daf0a151")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Switch sub-miniatyr 2-pole on-on"
+		(at -4.85 10.15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "04fedc0f-cd0d-4462-9470-b529dd75db49")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -4.55 -4.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f228dea7-b62a-4b5c-81cb-02d1bd0b9049")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.electrokit.com/upload/product/41020/41020354/41020354.pdf"
+		(at -2.65 7.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea04a4a8-a871-44e3-9a2a-6adf23910465")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -4.55 -4.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e79ef76c-b7d2-41e4-83f3-0449110f9129")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.55 -4.05)
+		(end 4.55 -4.05)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "94de4c6f-fc4a-4dcb-9b86-3e04f722a3fa")
+	)
+	(fp_line
+		(start -4.55 4.05)
+		(end -4.55 -4.05)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3a7d1e30-f785-42ef-a3d8-24e3fb3a77e9")
+	)
+	(fp_line
+		(start 4.55 -4.05)
+		(end 4.55 4.05)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "993c3917-d08b-4375-9812-aad55dc8dd98")
+	)
+	(fp_line
+		(start 4.55 4.05)
+		(end -4.55 4.05)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4001e4be-097a-478b-8fac-1835c9ff6324")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.25 5.38 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b371227e-a25e-45f4-8125-284f4ab1150e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 2 2.52)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e156d579-398b-4ffc-ae6a-26d698b4c7f2")
+	)
+	(pad "2" thru_hole oval
+		(at 2 0)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "98d431a8-fce7-476f-bad5-e6e50d6559cf")
+	)
+	(pad "3" thru_hole oval
+		(at 2 -2.56)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3406976f-d7e7-4f0f-9f24-9e4f5564f0b8")
+	)
+	(pad "4" thru_hole oval
+		(at -2.01 2.54)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "50fe5cd8-a6b6-4a3c-aad2-6c397cbaacab")
+	)
+	(pad "5" thru_hole oval
+		(at -2.01 0)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "618fa730-fe9a-491a-9f2f-8936e4cbc5a0")
+	)
+	(pad "6" thru_hole oval
+		(at -2.01 -2.56)
+		(size 2.8 1.524)
+		(drill oval 2 0.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "db9c8d6f-7032-41b3-a58b-ab2f7cd6eada")
+	)
+	(model "${MY_3DMODELS}/Misc.3dshapes/6mm DPDT Mini Toggle Switch.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 5)
+		)
+		(scale
+			(xyz 0.55 0.9 0.5)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+	(model "${MY_3DMODELS}/Misc.3dshapes/5mm DPDT Mini Toggle Switch.step"
+		(offset
+			(xyz 0 0 0.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
