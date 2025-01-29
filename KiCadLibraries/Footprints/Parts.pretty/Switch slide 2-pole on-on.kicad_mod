@@ -1,0 +1,283 @@
+(footprint "Switch slide 2-pole on-on"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -1.1 -12.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "88a33744-66d4-4f44-b5af-7a6f1bf59ee1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Switch slide 2-pole on-on - MFS 201 N"
+		(at 0 12.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "87853402-adce-41d0-9406-42df777e1ba3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 1.25 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a89fb561-9215-4c7a-a862-da4eb3a27d6a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.electrokit.com/upload/product/41011/41011894/MFP102_eng_datasheet.pdf"
+		(at 0 14.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f90160ac-965c-4f79-bc75-c287c99e70e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 1.25 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d01d846-71cc-497a-812f-684ee81490b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.7 -7.5)
+		(end -3.2 -7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "91246d22-4ca2-4021-af78-a509e0566397")
+	)
+	(fp_line
+		(start -3.7 7.5)
+		(end -3.7 -7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c023f8cb-a9e5-45c4-8d73-d727d908ff80")
+	)
+	(fp_line
+		(start -3.2 -11.5)
+		(end 3.2 -11.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bd1e2c12-4b83-491f-bdbc-ee9b26b48c74")
+	)
+	(fp_line
+		(start -3.2 -7.5)
+		(end -3.2 -11.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "67681af1-cb5c-4b6d-8b11-41b32a559a97")
+	)
+	(fp_line
+		(start -3.2 7.5)
+		(end -3.7 7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1b143dc0-cefb-4572-a82b-7b2c4378c011")
+	)
+	(fp_line
+		(start -3.2 11.5)
+		(end -3.2 7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "001119d7-269d-498e-a6e8-c82c111f5ee1")
+	)
+	(fp_line
+		(start 3.2 -11.5)
+		(end 3.2 -7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3f27cd78-1f1a-4bfe-91b9-98afb1917229")
+	)
+	(fp_line
+		(start 3.2 -7.5)
+		(end 3.7 -7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7d5ce190-7088-4240-9e48-07be3f946300")
+	)
+	(fp_line
+		(start 3.2 7.5)
+		(end 3.2 11.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0e5c9d38-9682-41f0-b98d-49108084a037")
+	)
+	(fp_line
+		(start 3.2 11.5)
+		(end -3.2 11.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c0ff3686-74b1-4fc9-9609-ef955bbbde85")
+	)
+	(fp_line
+		(start 3.7 -7.5)
+		(end 3.7 7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a117c9b7-7a02-4ffb-9356-636ecbd9a411")
+	)
+	(fp_line
+		(start 3.7 7.5)
+		(end 3.2 7.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bb3c7c01-a9ce-4421-88b5-1ae61a34437b")
+	)
+	(fp_circle
+		(center 0 -9.5)
+		(end 1 -9.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "afe0f865-53c1-4158-bd3a-a089bcf5d5a6")
+	)
+	(fp_circle
+		(center 0 9.5)
+		(end 1 9.5)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "2be6689a-a8ad-4e06-9da3-38560ee8fc78")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.2 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4d0eb2cd-4ce0-4866-b6bd-4c27859837a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 1.25 4)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "269407b4-1967-48ce-8fc7-c592244bfc1d")
+	)
+	(pad "2" thru_hole oval
+		(at 1.25 0)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9ce8e0d2-aacc-4a62-9d56-9bc88b9c6dc0")
+	)
+	(pad "3" thru_hole oval
+		(at 1.25 -4)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "575af392-14b9-4838-86e7-62bfadd38a7f")
+	)
+	(pad "4" thru_hole oval
+		(at -1.25 4)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "07f6c35a-31d0-461f-a5de-c465682e1344")
+	)
+	(pad "5" thru_hole oval
+		(at -1.25 0)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0e44d927-57b7-449f-a134-03c32630c8fa")
+	)
+	(pad "6" thru_hole oval
+		(at -1.25 -4)
+		(size 1.5 2.8)
+		(drill oval 0.9 2.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "af5b31d7-eaab-4477-a7a9-b8d795e2b58f")
+	)
+	(model "${MY_3DMODELS}/Misc.3dshapes/Uxcell 5mm Vertical Slide Switch DPDT 6 Terminals.step"
+		(offset
+			(xyz 0 0 7.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)
