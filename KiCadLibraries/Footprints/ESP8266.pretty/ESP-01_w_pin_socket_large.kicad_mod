@@ -38,6 +38,20 @@
   (pad "6" thru_hole oval (at 0 5.08) (size 2.54 1.7272) (drill 1.016 (offset -0.381 0)) (layers *.Cu *.Mask) (tstamp 6164ddd4-98ad-4e32-b191-f2b0df2f391b))
   (pad "7" thru_hole oval (at 2.54 7.62) (size 2.54 1.7272) (drill 1.016 (offset 0.381 0)) (layers *.Cu *.Mask) (tstamp 6a72f44e-fd05-4ae8-bfc4-2d9973b480bf))
   (pad "8" thru_hole oval (at 0 7.62) (size 2.54 1.7272) (drill 1.016 (offset -0.381 0)) (layers *.Cu *.Mask) (tstamp ac1b48f0-98fe-4cff-beb1-b7cdf9a57961))
+  (zone (net 0) (net_name "") (layers F&B.Cu) (tstamp 7afcef88-bc36-42c2-8935-7a3a44dab5ad) (hatch edge 0.508)
+    (connect_pads (clearance 0))
+    (min_thickness 0.254)
+    (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour allowed) (footprints allowed))
+    (fill (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 23 11)
+        (xy 12.5 11)
+        (xy 12.5 -3.5)
+        (xy 23 -3.5)
+      )
+    )
+  )
   (model "${MY_3DMODELS}/ESP-01.3dshapes/ESP8266_ESP01_cp.wrl"
     (offset (xyz 0 0 7.1882))
     (scale (xyz 1 1 1))
