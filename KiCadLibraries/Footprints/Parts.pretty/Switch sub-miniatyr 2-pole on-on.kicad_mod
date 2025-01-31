@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "Switch sub-miniatyr 2-pole on-on"
-		(at -4.85 10.15 0)
+		(at 0 5.08 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "04fedc0f-cd0d-4462-9470-b529dd75db49")
@@ -108,7 +108,7 @@
 		(uuid "4001e4be-097a-478b-8fac-1835c9ff6324")
 	)
 	(fp_text user "${REFERENCE}"
-		(at -0.25 5.38 0)
+		(at 0 -1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "b371227e-a25e-45f4-8125-284f4ab1150e")
