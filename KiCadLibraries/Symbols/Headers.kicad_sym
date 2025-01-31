@@ -5321,7 +5321,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 0)
+			(at 1.016 -11.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5425,7 +5425,7 @@
 			(pin power_in line
 				(at -5.08 2.54 0)
 				(length 3.81)
-				(name "+5V"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5443,7 +5443,7 @@
 			(pin power_in line
 				(at -5.08 0 0)
 				(length 3.81)
-				(name "GND"
+				(name "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
