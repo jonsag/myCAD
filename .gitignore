@@ -2074,3 +2074,10 @@ KiCadLibraries/Footprints/old/Standoff.pretty/10mm_ff_Standoff_MountingHole_3.2m
 KiCadLibraries/Footprints/old/Standoff.pretty/10mm_mf_Standoff_MountingHole_3.2mm_M3.kicad_mod
 KiCadLibraries/Footprints/old/Standoff.pretty/20mm_ff_Standoff_MountingHole_3.2mm_M3.kicad_mod
 KiCadLibraries/Footprints/old/Standoff.pretty/25mm_ff_Standoff_MountingHole_3.2mm_M3.kicad_mod
+CADs/PipeMountDistance/*.3mf
+CADs/PipeMountDistance/*.stl
+CADs/Cat is In-Out/*.stl
+CADs/Cat is In-Out/*.JPG
+CADs/Cat is In-Out/*.jpg
+CADs/PipeMount/*.3mf
+CADs/PipeMount/*.stl
