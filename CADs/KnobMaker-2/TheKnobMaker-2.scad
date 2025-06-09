@@ -7,49 +7,51 @@
 // ---------- Variables ----------
 
 // Main body
-Height = 17;// The total height of the knob, without dome or protruding text
+Height = 25;// The total height of the knob, without dome or protruding text
 
-Diameter1 = 14;// Bottom diameter
-Diameter2 = 11;// Top Diameter
+BottomDiameter = 30;// Bottom diameter
+TopDiameter = 25;// Top Diameter
 
-WallThickness = 1;// mm, set to 0 for a solid knob, without a hollow bottom
+WallThickness = 1;// mm, set to 0 for a solid knob (without a hollow bottom)
 
 // Pointer
-PointerType = 0;// 0: No pointer, 1: Wedged, 2: Rectangular
+PointerType = 2;// 0: No pointer, 1: Wedged, 2: Rectangular
 
-PointerLength = 4;
-PointerWidth = 6;
+PointerLength = 5;
+PointerWidth = 3;
 
-PointerHeight = 0;// mm, set to 0 for full height
+PointerHeight = 20;// mm, set to 0 for full height
 
-PointerThinning = 1;// 0/1, set to 0 to keep pointer shape up to the top
+PointerThinning = true;// 0/1, set to 0 to keep pointer shape up to the top
 
 // Top modification
 TopType = 2;// 0: Flat top, 1: Cylindrical indentation, 2: Spherical indentation, 3: Domed top
 
-TopRimWidth = 0.2;
+TopRimWidth = 1;
 
-TopIndentationDepth = 1;
+TopIndentationDepth = 2;
 
 TopDomeHeight = 2;
 
 // Ridges around the knob
-RidgeType = 2;// 0: No ridges, 1: Rectangular ridges, 2: Triangular ridges, 3: Circular ridges
+RidgeType = 1;// 0: No ridges, 1: Rectangular ridges, 2: Triangular ridges, 3: Circular ridges
 
-NoOfRidges = 36;
+NoOfRidges = 22;
 
 RidgeHeight = 1;// 0 -> 1, how much of the knob will have ridges, measured from the bottom
-RidgeDepth = 2;// Protrusion of the ridges
+RidgeDepth = 1;// Protrusion of the ridges
 RidgeWidth = 3;
 
-// Skirt
-SkirtDiameter1 = 0;// mm, set to 0 for no skirt
-SkirtDiameter2 = 0;// mm, set to 0 to blend in with knob
+DrawLastRidge = true;// When you have a pointer and the ridges, also draw the ridge in the pointers position
 
-SkirtHeight = 10;
+// Skirt
+SkirtBottomDiameter = 35;// mm, set to 0 for no skirt
+SkirtTopDiameter = 0;// mm, set to 0 to blend in with knob
+
+SkirtHeight = 15;
 
 // Stem
-ShaftType = 1;// 0: No shaft (??), 1: Smooth or knurled cylindrical shaft, 2: D shaft
+ShaftType = 2;// 0: No shaft (??), 1: Smooth or knurled cylindrical shaft, 2: D shaft
 
 // Typical 18T knurled shaft: OA diameter 6mm
 // Typical D shaft: Diameter 6mm, Flat thickness 4.5mm
@@ -66,14 +68,14 @@ StemWallThickness = 2;
 SplitShaft = 1;// 0: No split, 1: Split to hole depth, 2: Whole stem is split
 SplitWidth = 1;
 
-ShaftOffset = -6;// The protrusion of the shaft below the knobs base
+ShaftOffset = -5;// The protrusion of the shaft below the knobs base, negative value makes stem shorter than knob base
 ShaftTolerance = 0.1;// Over(+) or undersized (-) hole
 
 // Text
-TextType = 3;// 0 = no text, 1 = center curved up, 2 = center curved down, 3: straight text in the middle
-TextString = "GM328";
+TextType = 1;// 0 = no text, 1 = center curved up, 2 = center curved down, 3: straight text in the middle
+TextString = "Volume";
 
-TextSize = 2.1;
+TextSize = 4;
 TextFont = "Liberation Sans:style=Bold";//"Liberation Sans:style=Bold Italic";
 TextSpacing = 1;
 TextFn = 10;
@@ -81,6 +83,8 @@ TextFn = 10;
 TextDepth = TopIndentationDepth;// set this to TopIndentationDepth if you still want text on the top despite you have a concave top
 
 TextPlaceAngle = 0;// 0 - 360 cw, rotate text around the knob
+
+TextRaised = true;
 
 //TextZOffset = 0;// set this to -TopIndentationDepth if you still want text on the top despite you have a domed top
 
@@ -93,15 +97,15 @@ AlphaValue = 1;
 // Make sure the pointer isn't higher than knob height
 PointerHeightMax = PointerHeight > Height ? Height : PointerHeight;
 
-echo("Max allowed indentation/dome diameter: ", Diameter2 - TopRimWidth * 2);
+echo("Max allowed indentation/dome diameter: ", TopDiameter - TopRimWidth * 2);
 
 // ---------- Spherical indentation on top
-CalculatedIndentationSphereDiameter = (TopIndentationDepth ^ 2 + ((Diameter2 - TopRimWidth * 2) / 2) ^ 2) / TopIndentationDepth;
+CalculatedIndentationSphereDiameter = (TopIndentationDepth ^ 2 + ((TopDiameter - TopRimWidth * 2) / 2) ^ 2) / TopIndentationDepth;
 echo("Calculated sphere diameter: ", CalculatedIndentationSphereDiameter);
 
 // Check to see if the sphere diameter /2 is smaller that the indentation depth
 // If so the diameter is enlarged to the indentation depth *2
-IndentationSphereDiameter = CalculatedIndentationSphereDiameter / 2 < TopIndentationDepth ? Diameter2 - TopRimWidth * 2 : CalculatedIndentationSphereDiameter;
+IndentationSphereDiameter = CalculatedIndentationSphereDiameter / 2 < TopIndentationDepth ? TopDiameter - TopRimWidth * 2 : CalculatedIndentationSphereDiameter;
 
 MaxTopIndentationDepth = IndentationSphereDiameter / 2 < TopIndentationDepth ? IndentationSphereDiameter / 2 : TopIndentationDepth;
 echo("Top max indentation depth: ", MaxTopIndentationDepth);
@@ -116,7 +120,7 @@ echo("Sphere diameter: ", IndentationSphereDiameter);
 SphereZTranslation = CalculatedIndentationSphereDiameter / 2 < TopIndentationDepth ? 0 : IndentationSphereDiameter / 2 - TopIndentationDepth;
 
 module MainBody() {
-  cylinder(h = Height, d1 = Diameter1, d2 = Diameter2);
+  cylinder(h = Height, d1 = BottomDiameter, d2 = TopDiameter);
 
 }
 
@@ -126,7 +130,7 @@ module Pointer() {
 
       PointerTipX = PointerType == 1 ? 0 : PointerWidth / 2;
 
-      BottomPointerY = sqrt((Diameter1 / 2) ^ 2 - (PointerWidth / 2) ^ 2);
+      BottomPointerY = sqrt((BottomDiameter / 2) ^ 2 - (PointerWidth / 2) ^ 2);
 
       // Lower pointer shape
       color("red")
@@ -138,13 +142,13 @@ module Pointer() {
             [PointerWidth / 2, BottomPointerY]
           ]);
 
-      PointerYTranslate = PointerHeightMax > 0 ? (Diameter2 - Diameter2) * PointerHeightMax / Height : 0;
+      PointerYTranslate = PointerHeightMax > 0 ? (TopDiameter - TopDiameter) * PointerHeightMax / Height : 0;
       PointerZTranslate = PointerHeightMax > 0 ? PointerHeightMax : Height;
 
-      UpperPointerLength = PointerThinning > 0 ? 0.01 : PointerLength;
-      UpperPointerWidth = PointerThinning > 0 ? 0.01 : PointerWidth;
+      UpperPointerLength = PointerThinning == true ? 0.01 : PointerLength;
+      UpperPointerWidth = PointerThinning == true ? 0.01 : PointerWidth;
 
-      TopPointerY = PointerType == 2 ? sqrt((Diameter2 / 2) ^ 2 - (PointerWidth / 2) ^ 2) : Diameter2 / 2 - 0.1;
+      TopPointerY = PointerType == 2 ? sqrt((TopDiameter / 2) ^ 2 - (PointerWidth / 2) ^ 2) : TopDiameter / 2 - 0.1;
 
       // Upper pointer shape
       color("red")
@@ -166,7 +170,7 @@ module TopIndentation() {
   color("red")
     if (TopType == 1) {
       translate([0, 0, Height - TopIndentationDepth])
-        cylinder(h = TopIndentationDepth, d = Diameter2 - TopRimWidth * 2);
+        cylinder(h = TopIndentationDepth, d = TopDiameter - TopRimWidth * 2);
 
         // Spherical indentation
     } else if (TopType == 2) {
@@ -178,16 +182,16 @@ module TopIndentation() {
 module TopDome() {
   echo("Top dome height: ", TopDomeHeight);
 
-  CalculatedDomeSphereDiameter = TopDomeHeight == 0 ? Diameter2 - TopRimWidth * 2 : (TopDomeHeight ^ 2 + ((Diameter2 - TopRimWidth * 2) / 2) ^ 2) / TopDomeHeight;
+  CalculatedDomeSphereDiameter = TopDomeHeight == 0 ? TopDiameter - TopRimWidth * 2 : (TopDomeHeight ^ 2 + ((TopDiameter - TopRimWidth * 2) / 2) ^ 2) / TopDomeHeight;
   echo("Calculated dome sphere diameter: ", CalculatedDomeSphereDiameter);
 
-  DomeSphereDiameter = CalculatedDomeSphereDiameter / 2 < TopDomeHeight ? Diameter2 - TopRimWidth * 2 : CalculatedDomeSphereDiameter;
+  DomeSphereDiameter = CalculatedDomeSphereDiameter / 2 < TopDomeHeight ? TopDiameter - TopRimWidth * 2 : CalculatedDomeSphereDiameter;
 
   MaxTopDomeHeight = DomeSphereDiameter / 2 < TopDomeHeight ? DomeSphereDiameter / 2 : TopDomeHeight;
-  //  MaxTopDomeHeight = CalculatedDomeSphereDiameter / 2 > (Diameter2 - TopRimWidth * 2) ? Diameter2 - TopRimWidth * 2 : TopDomeHeight;
+  //  MaxTopDomeHeight = CalculatedDomeSphereDiameter / 2 > (TopDiameter - TopRimWidth * 2) ? TopDiameter - TopRimWidth * 2 : TopDomeHeight;
   echo("Max top dome height: ", MaxTopDomeHeight);
 
-  //  DomeSphereDiameter = CalculatedDomeSphereDiameter / 2 > MaxTopDomeHeight ? CalculatedDomeSphereDiameter : Diameter2 - TopRimWidth * 2;
+  //  DomeSphereDiameter = CalculatedDomeSphereDiameter / 2 > MaxTopDomeHeight ? CalculatedDomeSphereDiameter : TopDiameter - TopRimWidth * 2;
   echo("Dome sphere diameter: ", DomeSphereDiameter);
 
   DomeZTranslation = Height - DomeSphereDiameter / 2 + MaxTopDomeHeight;
@@ -203,16 +207,18 @@ module TopDome() {
 }
 
 module Ridges() {
-  MaxNoOfRidges = PointerType > 0 ? NoOfRidges - 1 : NoOfRidges;
+  //MaxNoOfRidges1 = PointerType > 0 ? NoOfRidges - 1 : NoOfRidges;
+  MaxNoOfRidges = (PointerType == 0 || PointerType > 0 && DrawLastRidge == true) ? NoOfRidges : NoOfRidges - 1;
+
   color("red")
     for(i = [1:MaxNoOfRidges]) {
       echo(i);
 
       if (RidgeType == 1) {
-        BottomRidgeY = sqrt((Diameter1 / 2) ^ 2 - (PointerWidth / 2) ^ 2);
+        BottomRidgeY = sqrt((BottomDiameter / 2) ^ 2 - (PointerWidth / 2) ^ 2);
 
         rotate(a = i * 360 / NoOfRidges, [0, 0, 1])
-          //translate([0, Diameter1 / 2 + RidgeDepth / 2, 0])
+          //translate([0, BottomDiameter / 2 + RidgeDepth / 2, 0])
           hull() {
             linear_extrude(height = 0.01)
               //square([RidgeWidth, RidgeDepth], center = true);
@@ -223,7 +229,7 @@ module Ridges() {
                 [RidgeWidth / 2, BottomRidgeY + RidgeDepth], 
                 [RidgeWidth / 2, BottomRidgeY]
               ]);
-            translate([0, -Diameter1 / 2 + Diameter2 / 2, Height * RidgeHeight])
+            translate([0, -BottomDiameter / 2 + TopDiameter / 2, Height * RidgeHeight])
               linear_extrude(height = 0.01)
                 //square([RidgeWidth, RidgeDepth], center = true);
                 polygon(points = [
@@ -234,10 +240,10 @@ module Ridges() {
                 ]);
           }
       } else if (RidgeType == 2) {
-        BottomRidgeY = sqrt((Diameter1 / 2) ^ 2 - (PointerWidth / 2) ^ 2);
+        BottomRidgeY = sqrt((BottomDiameter / 2) ^ 2 - (PointerWidth / 2) ^ 2);
 
         rotate(a = i * 360 / NoOfRidges, [0, 0, 1])
-          //translate([0, Diameter1 / 2 + RidgeDepth / 2, 0])
+          //translate([0, BottomDiameter / 2 + RidgeDepth / 2, 0])
           hull() {
             linear_extrude(height = 0.01)
               polygon(points = [
@@ -245,7 +251,7 @@ module Ridges() {
                 [0, BottomRidgeY + RidgeDepth], 
                 [RidgeWidth / 2, BottomRidgeY]
               ]);
-            translate([0, -Diameter1 / 2 + Diameter2 / 2, Height * RidgeHeight])
+            translate([0, -BottomDiameter / 2 + TopDiameter / 2, Height * RidgeHeight])
               linear_extrude(height = 0.01)
                 polygon(points = [
                   [-RidgeWidth / 2, BottomRidgeY], 
@@ -254,18 +260,18 @@ module Ridges() {
                 ]);
           }
       } else if (RidgeType == 3) {
-        BottomRidgeY = sqrt((Diameter1 / 2) ^ 2 - (PointerWidth / 2) ^ 2);
-        SinX = (Diameter1 / 2 - Diameter2 / 2) / Height;
+        BottomRidgeY = sqrt((BottomDiameter / 2) ^ 2 - (PointerWidth / 2) ^ 2);
+        SinX = (BottomDiameter / 2 - TopDiameter / 2) / Height;
         echo("SinX: ", SinX);
         Angle = asin(SinX);
         echo("Angle: ", Angle);
         rotate(a = i * 360 / NoOfRidges, [0, 0, 1])
-          translate([0, Diameter1 / 2 - RidgeWidth / 2 + RidgeDepth, 0])
+          translate([0, BottomDiameter / 2 - RidgeWidth / 2 + RidgeDepth, 0])
             rotate(a = Angle, [1, 0, 0])
               hull() {
                 linear_extrude(height = 0.01)
                   circle(d = RidgeWidth);
-                //translate([0, -Diameter1 / 2 + Diameter2 / 2, Height * RidgeHeight])
+                //translate([0, -BottomDiameter / 2 + TopDiameter / 2, Height * RidgeHeight])
                 translate([0, 0, Height * RidgeHeight])
                   linear_extrude(height = 0.01)
                     circle(d = RidgeWidth);
@@ -276,11 +282,11 @@ module Ridges() {
 }
 
 module Skirt() {
-  SkirtUpperDiameter = SkirtDiameter2 > 0 ? SkirtDiameter2 : 2 * ((Diameter1 / 2) - (Diameter1 / 2 - Diameter2 / 2) * (SkirtHeight / Height));
+  SkirtUpperDiameter = SkirtTopDiameter > 0 ? SkirtTopDiameter : 2 * ((BottomDiameter / 2) - (BottomDiameter / 2 - TopDiameter / 2) * (SkirtHeight / Height));
   echo("Skirt upper diameter: ", SkirtUpperDiameter);
 
   color("red")
-    cylinder(d1 = SkirtDiameter1, d2 = SkirtUpperDiameter, h = SkirtHeight);
+    cylinder(d1 = SkirtBottomDiameter, d2 = SkirtUpperDiameter, h = SkirtHeight);
 }
 
 module Stem() {
@@ -317,7 +323,7 @@ module writeCurvedText() {
   Chars = len(TextString) + 1;
 
   Degrees = TextType == 1 ? Chars * TextSize * 7 : Chars * TextSize * 6;
-  TextRadius = TextType == 1 ? Diameter2 / 2 - TopRimWidth - TextSize * 1.3 : Diameter2 / 2 - TopRimWidth - TextSize * 0.7;
+  TextRadius = TextType == 1 ? TopDiameter / 2 - TopRimWidth - TextSize * 1.3 : TopDiameter / 2 - TopRimWidth - TextSize * 0.7;
 
   Top = TextType == 1 ? true : false;
 
@@ -378,21 +384,25 @@ module KnobMaker() {
             Ridges();
             // Clean bottom
             translate([0, 0, -Height])
-              cylinder(d = Diameter1 * 2, h = Height);
+              cylinder(d = BottomDiameter * 2, h = Height);
             // Clean top
             translate([0, 0, Height])
-              cylinder(d = Diameter1 * 2, h = Height);//}
+              cylinder(d = BottomDiameter * 2, h = Height);//}
           }
         }
 
         // Skirt
-        if (SkirtDiameter1 > 0) {
+        if (SkirtBottomDiameter > 0) {
           Skirt();
         }
 
       }
       // Hollow out the inside
-      cylinder(h = Height - WallThickness - TopExtraWallThickness, d1 = Diameter1 - WallThickness * 2, d2 = Diameter2 - WallThickness * 2);
+      if (WallThickness > 0) {
+        cylinder(h = Height - WallThickness - TopExtraWallThickness, d1 = BottomDiameter - WallThickness * 2, d2 = TopDiameter - WallThickness * 2);
+      } else {
+        cylinder(h = Height - WallThickness - TopExtraWallThickness, d = ShaftDiameter + StemWallThickness * 2);
+      }
     }
   }
   // Stem
