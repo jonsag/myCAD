@@ -9359,7 +9359,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.lcdwiki.com/res/MSP2807/QD-TFT2803%20specification_v1.1.pdf"
-			(at -16.51 12.7 0)
+			(at 4.572 -22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9368,7 +9368,7 @@
 			)
 		)
 		(property "Description" "ILI9341 controller, SPI TFT LCD Display, 2.8inch SPI Module ILI9341 SKU:MSP2807"
-			(at 0 0 0)
+			(at 8.636 -27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9376,7 +9376,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "driver display"
+		(property "ki_keywords" "driver display SKU:MSP2807 2.8\" SPI TFT Module Driver:ILI9341 Bus:SPI Dots:240x320 Touch:Yes"
 			(at 0 0 0)
 			(effects
 				(font
