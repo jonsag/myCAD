@@ -1192,3 +1192,38 @@ KiCadLibraries/3dmodels/My3Dshapes.3dshapes/old/raspberry-pi-zero-w-1.snapshot.1
 KiCadLibraries/3dmodels/My3Dshapes.3dshapes/raspberry-pi-cm4-catspi.step
 KiCadLibraries/3dmodels/old/
 KiCadLibraries/old/
+CADs/DressingBottleHolder/*.dxf
+CADs/DressingBottleHolder/*.3mf
+CADs/DressingBottleHolder/*.step
+CADs/DressingBottleHolder/*.stl
+CADs/DressingBottleHolder/*.png
+CADs/FanGuard/*.png
+CADs/FanGuard/*.3mf
+CADs/FanGuard/*.stl
+CADs/FilamentSpoolRoller/*.jpeg
+CADs/FilamentSpoolRoller/*.stl
+CADs/FilamentSpoolRoller/*.jpg
+CADs/FilamentSpoolRoller/*.3mf
+CADs/FilamentSpoolRoller/6803-2RS_Ball_Bearing.FCStd
+.gitignore
+CADs/KnobMaker-2/*.pdf
+CADs/KnobMaker-2/*.png
+CADs/KnobMaker-2/*.xcf
+CADs/KnobMaker-2/*.3mf
+CADs/KnobMaker-2/*.stl
+CADs/NeedleFileHandle/*.stl
+CADs/NeedleFileHandle/*.3mf
+CADs/PipeMount/*.3mf
+CADs/PipeMount/*.stl
+CADs/PipeMountDistance/*.3mf
+CADs/PipeMountDistance/*.stl
+KiCadLibraries/Footprints/old/
+CADs/Cat is In-Out/*.stl
+CADs/Cat is In-Out/*.JPG
+CADs/Cat is In-Out/*.jpg
+KiCadLibraries/Symbols/old/
+CADs/GM328TesterCase/files/
+CADs/GM328TesterCase/images/
+CADs/GM328TesterCase/*.3mf
+CADs/GM328TesterCase/*.stl
+CADs/GM328TesterCase/LICENSE.txt
