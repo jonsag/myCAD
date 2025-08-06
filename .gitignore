@@ -1229,6 +1229,17 @@ CADs/GM328TesterCase/*.stl
 CADs/GM328TesterCase/LICENSE.txt
 CADs/Cable Chain for Y Axis Geeetech i3 Pro B- 2630057/Cable Chain, perfect fit and rounded edges - 666118/files/
 CADs/Cable Chain for Y Axis Geeetech i3 Pro B- 2630057/Cable Chain, perfect fit and rounded edges - 666118/images/
-CADs/Cable Chain for Y Axis Geeetech i3 Pro B- 2630057/Cable Chain, perfect fit and rounded edges - 666118/LICENSE.txt
-CADs/Cable Chain for Y Axis Geeetech i3 Pro B- 2630057/Cable Chain, perfect fit and rounded edges - 666118/README.txt
+CADs/Cable Chain for Y Axis Geeetech i3 Pro B- 2630057/Cable Chain, perfect fit and rounded edges - 666118/*.txt
 CADs/GM328TesterCase/README.txt
+CADs/FanGuard/*.gcode
+CADs/Makita LXT 18V Adapter/*.3mf
+CADs/Makita LXT 18V Adapter/*.stl
+CADs/Solder Fume Extractor/*.jpg
+CADs/Solder Fume Extractor/*.avif
+CADs/Solder Fume Extractor/*.png
+CADs/Solder Fume Extractor/*.jpeg
+CADs/Solder Fume Extractor/*.STEP
+CADs/Solder Fume Extractor/*.3mf
+CADs/Solder Fume Extractor/*.stl
+CADs/WindingKey/*.3mf
+CADs/WindingKey/*.stl

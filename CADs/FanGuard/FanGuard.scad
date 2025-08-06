@@ -1,6 +1,6 @@
 // FanGuard.scad
 
-FanSize = 8;// Axial fan size: 0 = Define measurements below, 1 = 25, 2 = 40, 3 = 50, 4 = 60, 5 = 70, 6 = 80, 7 = 92, 8 = 120
+FanSize = 6;// Axial fan size: 0 = Define measurements below, 1 = 25, 2 = 40, 3 = 50, 4 = 60, 5 = 70, 6 = 80, 7 = 92, 8 = 120
 
 Thickness = 2;
 

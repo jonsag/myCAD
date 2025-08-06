@@ -858,7 +858,7 @@
 	)
 	(model "${MY_3DMODELS}/My3Dshapes.3dshapes/2.8 TFT Module.stp"
 		(offset
-			(xyz 40.65 -16.5 9.5)
+			(xyz 40.65 -16.5 11)
 		)
 		(scale
 			(xyz 1 1 1)
