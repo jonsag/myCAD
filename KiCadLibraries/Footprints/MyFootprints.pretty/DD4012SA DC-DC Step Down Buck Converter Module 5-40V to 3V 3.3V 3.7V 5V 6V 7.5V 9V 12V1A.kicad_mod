@@ -1,0 +1,197 @@
+(footprint "DD4012SA DC-DC Step Down Buck Converter Module 5-40V to 3V 3.3V 3.7V 5V 6V 7.5V 9V 12V1A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -1.27 -8.89 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "c02bd69f-177b-4bfb-ab28-d9aa48e28396")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "DD4012SA DC-DC Step Down Buck Converter Module 5-40V to 3V 3.3V 3.7V 5V 6V 7.5V 9V 12V1A"
+		(at 2.54 6.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3fbdc117-d72d-4543-85be-56e6aab57ef4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a644bbe-ced8-4ebd-8e64-a79cbd6f501a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4767eba7-0f03-4334-ac0c-8f3438dcab48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "009d3244-9e0a-425d-8b33-702fc9a1d37f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 0 -6.35)
+		(end 2.54 -6.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7034cd0b-bf46-49d1-99a0-df59f99a1fc3")
+	)
+	(fp_line
+		(start 2.54 -6.35)
+		(end 2.54 -3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a2cc7f56-ffd3-4d71-b77e-3c4e9803ef78")
+	)
+	(fp_line
+		(start 2.54 -3.81)
+		(end 5.08 -3.81)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8ace847d-bfb9-456c-abff-60a27faa615b")
+	)
+	(fp_rect
+		(start -3.175 -7.62)
+		(end 8.255 1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "5e3f3764-9789-49fc-9282-2b34e1ef65b9")
+	)
+	(fp_text user "Vout"
+		(at 5.08 1.905 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b3d4ac28-216e-46c0-9ebd-1e846c791406")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "Vin"
+		(at 0 1.905 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ef4ffcac-fa3b-4c6a-9d54-c2f33f1e5a1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "GND"
+		(at 2.54 1.905 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f293158d-b693-4cdb-9e38-2cbada2e0aa5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 -1.905 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ad87e85b-d7a2-4e97-916a-16f10e8e4abc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "051814aa-2e81-4e1c-a5c0-035dd7b7eded")
+	)
+	(pad "2" thru_hole oval
+		(at 2.54 0)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "01c678f0-07c5-4df1-a178-6fcfefdfa259")
+	)
+	(pad "3" thru_hole oval
+		(at 5.08 0)
+		(size 1.7 2)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f8d90ca6-ddec-434b-8bf6-34b7acd0ddc4")
+	)
+	(model "${MY_3DMODELS}/My3Dshapes.3dshapes/DD4012SA 6.5-40V to 3.3V 5V DC-DC Step-Down Buck Converter, 1A.STEP"
+		(offset
+			(xyz 2.54 5.67 9.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 0 0)
+		)
+	)
+)
